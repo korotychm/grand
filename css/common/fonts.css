@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Raleway';
+}
+src url('../fonts/Raleway-Black.eot') {
+  src: url("../fonts/Raleway-Black.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-Black.woff") format('woff'), url("../fonts/Raleway-Black.ttf") format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-ExtraBold.woff") format('woff'), url("../fonts/Raleway-ExtraBold.ttf") format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-Bold.woff") format('woff'), url("../fonts/Raleway-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-Medium.woff") format('woff'), url("../fonts/Raleway-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-Regular.woff") format('woff'), url("../fonts/Raleway-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway-Light.woff") format('woff'), url("../fonts/Raleway-Light.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format('embedded-opentype'), url("../fonts/Lato-Black.woff") format('woff'), url("../fonts/Lato-Black.ttf") format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Lato-Bold.woff") format('woff'), url("../fonts/Lato-Bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Medium.eot");
+  src: url("../fonts/Lato-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/Lato-Medium.woff") format('woff'), url("../fonts/Lato-Medium.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/LatoLato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Lato-Regular.woff") format('woff'), url("../fonts/Lato-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Light.eot");
+  src: url("../fonts/Lato-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Lato-Light.woff") format('woff'), url("../fonts/Lato-Light.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ALSRubl';
+  src: url("../fonts/rouble.ttf");
+}
+body {
+  font-family: var(--text-font);
+  font-size: 16px;
+  line-height: 1.2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+.title-large {
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+@media (max-width: 1680px) {
+  .title-large {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .title-large {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .title-large {
+    font-size: 24px;
+  }
+}
+.title1 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.2;
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 50px;
+}
+@media (max-width: 1680px) {
+  .title1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1023px) {
+  .title1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .title1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+.title2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 1680px) {
+  .title2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) {
+  .title2 {
+    font-size: 18px;
+  }
+}
+.text1 {
+  font-family: 'Lato';
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--text-font);
+  line-height: 1.2;
+}
+@media (max-width: 1680px) {
+  .text1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1023px) {
+  .text1 {
+    font-size: 16px;
+  }
+}
+.text2 {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+@media (max-width: 1023px) {
+  .text2 {
+    font-size: 14px;
+  }
+}
+.text3 {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 12px;
+}
+@media (max-width: 1023px) {
+  .text3 {
+    font-size: 10px;
+  }
+}
+.link {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .link {
+    font-size: 12px;
+  }
+}
+.mini-text {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.item__title {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 12px 0 0;
+}
+@media (max-width: 1023px) {
+  .item__title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .item__title {
+    font-size: 10px;
+  }
+}
+.item__brand {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--gold);
+  text-decoration: none;
+}
+@media (max-width: 1023px) {
+  .item__brand {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .item__brand {
+    font-size: 12px;
+  }
+}
+.item__oldprice {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+@media (max-width: 767px) {
+  .item__oldprice {
+    font-size: 12px;
+  }
+}
+.item__percent {
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .item__percent {
+    font-size: 12px;
+  }
+}
+.item__newprice {
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--gold);
+}
+@media (max-width: 767px) {
+  .item__newprice {
+    font-size: 18px;
+  }
+}
+.rub {
+  font-family: 'ALSRubl';
+}

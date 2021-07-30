@@ -1,0 +1,22 @@
+@media (max-width: 1267px) {
+  .alphabet {
+    display: none;
+  }
+}
+.alphabet div {
+  margin: 10px 0;
+  display: flex;
+}
+.alphabet div a {
+  margin-right: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+@media (hover) {
+  .alphabet div a:hover {
+    color: var(--gold);
+  }
+}

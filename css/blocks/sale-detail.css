@@ -1,0 +1,121 @@
+.sale-detail__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sale-detail__pagination {
+  display: flex;
+}
+.sale-detail__pagination .pagination-arrow {
+  position: static;
+}
+.sale-detail__pagination .pagination-counter {
+  position: static;
+  width: 90px;
+}
+@media (max-width: 767px) {
+  .sale-detail__pagination .pagination-counter {
+    width: 60px;
+  }
+}
+.sale-detail__content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 1267px) {
+  .sale-detail__content {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .sale-detail__content {
+    display: block;
+  }
+}
+.sale-detail__left {
+  padding-right: 150px;
+}
+@media (max-width: 1267px) {
+  .sale-detail__left {
+    padding-right: 80px;
+  }
+}
+@media (max-width: 1023px) {
+  .sale-detail__left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .sale-detail__left {
+    margin-bottom: 30px;
+  }
+}
+.sale-detail__left img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1023px) {
+  .sale-detail__left img {
+    max-width: 220px;
+  }
+}
+.sale-detail__contact {
+  margin: 50px auto 0;
+  text-align: center;
+  max-width: 240px;
+}
+@media (max-width: 1023px) {
+  .sale-detail__contact {
+    margin: 0 0 0 50px;
+  }
+}
+@media (max-width: 767px) {
+  .sale-detail__contact {
+    max-width: none;
+    width: 45%;
+    margin-left: 20px;
+    flex-shrink: 0;
+  }
+}
+.sale-detail__contact p {
+  margin: 0;
+}
+.sale-detail__right {
+  padding: 60px 100px;
+  border: 1px solid #c4c4c4;
+}
+@media (max-width: 1267px) {
+  .sale-detail__right {
+    padding: 40px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .sale-detail__right {
+    padding: 30px 20px;
+  }
+}
+.sale-detail__date {
+  color: var(--gray3);
+}
+.sale-detail__text h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: var(--text-font);
+  font-weight: 500;
+  margin: 15px 0 40px;
+}
+@media (max-width: 1267px) {
+  .sale-detail__text h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .sale-detail__text h2 {
+    font-size: 18px;
+  }
+}

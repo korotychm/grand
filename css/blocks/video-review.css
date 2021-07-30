@@ -1,0 +1,231 @@
+.video-review .title1 {
+  margin-bottom: 100px;
+}
+@media (max-width: 1267px) {
+  .video-review .title1 {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-review .title1 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review .title1 {
+    margin-bottom: 30px;
+  }
+}
+.video-review__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.video-review__heading div {
+  width: 350px;
+}
+@media (max-width: 1267px) {
+  .video-review__heading div {
+    text-align: right;
+  }
+}
+.video-review__heading div a {
+  color: var(--red);
+  transition: 0.5s;
+}
+@media (hover) {
+  .video-review__heading div a:hover {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1680px) {
+  .video-review__heading div a {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review__heading div a {
+    margin-left: 0;
+  }
+}
+.video-review__slider {
+  position: relative;
+}
+.video-review__slider .slick-list {
+  margin: 0 -15px;
+}
+.video-review__slider .slick-arrow,
+.video-review__slider .slick-counter {
+  top: -65px;
+  right: 0;
+}
+@media (max-width: 1267px) {
+  .video-review__slider .slick-arrow,
+  .video-review__slider .slick-counter {
+    top: -45px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-review__slider .slick-arrow,
+  .video-review__slider .slick-counter {
+    display: none;
+  }
+}
+.video-review__slider .slick-arrow.slick-prev,
+.video-review__slider .slick-counter.slick-prev {
+  right: 150px;
+}
+@media (max-width: 1267px) {
+  .video-review__slider .slick-arrow.slick-prev,
+  .video-review__slider .slick-counter.slick-prev {
+    right: 105px;
+  }
+}
+.video-review__slide {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: 0 15px;
+}
+@media (max-width: 1023px) {
+  .video-review__slide {
+    display: none !important;
+    margin: 0;
+  }
+  .video-review__slide:first-child {
+    display: block !important;
+  }
+}
+.video-review__item {
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .video-review__item {
+    margin-bottom: 20px;
+  }
+  .video-review__item:last-child {
+    margin-bottom: 0;
+  }
+}
+.video-review__item video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 1023px) and (max-width: 1023px) {
+  .video-review__item:last-child {
+    display: none;
+  }
+}
+.video-review__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-review__overlay::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(88,88,88,0.1) 53.65%, rgba(0,0,0,0.6) 93.23%);
+}
+.video-review__overlay div {
+  position: absolute;
+  color: var(--white);
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+}
+@media (max-width: 1267px) {
+  .video-review__overlay div {
+    bottom: 15px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-review__overlay div {
+    bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review__overlay div {
+    bottom: 15px;
+    padding: 0 15px;
+  }
+}
+.video-review__overlay div h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 1680px) {
+  .video-review__overlay div h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-review__overlay div h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review__overlay div h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+.video-review__overlay div p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+}
+@media (max-width: 1680px) {
+  .video-review__overlay div p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .video-review__overlay div p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review__overlay div p {
+    font-size: 12px;
+  }
+}
+.video-review__button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 74px;
+  height: 74px;
+  background: url("../img/icons/play-circle.svg") no-repeat center;
+  background-size: contain;
+}
+@media (max-width: 1680px) {
+  .video-review__button {
+    width: 54px;
+    height: 54px;
+  }
+}
+@media (hover) {
+  .video-review__button:hover {
+    transform: scale(1.1);
+  }
+}

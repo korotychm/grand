@@ -1,0 +1,215 @@
+@media (max-width: 1680px) {
+  .elrai-carousel .section-top {
+    grid-template-columns: 2fr 1fr;
+  }
+  .elrai-carousel .section-top__info {
+    display: block;
+    margin-top: -150px;
+  }
+  .elrai-carousel .section-top__info a {
+    margin-top: 70px;
+    display: inline-block;
+  }
+}
+@media (max-width: 1023px) {
+  .elrai-carousel .section-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .elrai-carousel .section-top {
+    display: block;
+  }
+}
+@media (max-width: 1680px) and (max-width: 767px) {
+  .elrai-carousel .section-top {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1680px) and (max-width: 1023px) {
+  .elrai-carousel .section-top__info {
+    margin-top: -95px;
+  }
+}
+@media (max-width: 1680px) and (max-width: 767px) {
+  .elrai-carousel .section-top__info {
+    margin-top: 0;
+  }
+  .elrai-carousel .section-top .text2 {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1680px) and (max-width: 1023px) {
+  .elrai-carousel .section-top a {
+    margin-top: 30px;
+    float: right;
+  }
+}
+@media (max-width: 1680px) and (max-width: 767px) {
+  .elrai-carousel .section-top a {
+    position: static;
+  }
+}
+.elrai-carousel h2 {
+  max-width: 800px;
+  margin: 0 0 30px;
+}
+@media (max-width: 1680px) {
+  .elrai-carousel h2 {
+    max-width: 600px;
+  }
+  .elrai-carousel h2.title-large {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1023px) {
+  .elrai-carousel h2 {
+    max-width: 350px;
+  }
+  .elrai-carousel h2.title-large {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .elrai-carousel h2 {
+    max-width: 100%;
+  }
+  .elrai-carousel h2.title-large {
+    font-size: 24px;
+    margin-bottom: 10px;
+    max-width: 90%;
+  }
+  .elrai-carousel h2.title1 {
+    max-width: 90% !important;
+  }
+}
+.elrai-carousel__carousel {
+  padding-left: 400px;
+}
+@media (max-width: 1680px) {
+  .elrai-carousel__carousel {
+    padding-left: 70px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .elrai-carousel__carousel {
+    padding: 0;
+    width: 60%;
+    margin-top: 70px;
+  }
+}
+.elrai-carousel__carousel .slick::before,
+.elrai-carousel__carousel .slick::after {
+  content: '';
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  left: -30px;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background: var(--white);
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .elrai-carousel__carousel .slick::before,
+  .elrai-carousel__carousel .slick::after {
+    display: none;
+  }
+}
+.elrai-carousel__carousel .slick::after {
+  left: auto;
+  right: -30px;
+}
+.elrai-carousel .slick-slide {
+  margin: 0 30px;
+}
+@media (max-width: 1267px) {
+  .elrai-carousel .slick-slide {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .elrai-carousel .slick-slide {
+    margin: 0 10px;
+  }
+}
+.elrai-carousel .slick-list {
+  margin: 0 -30px;
+}
+@media (max-width: 1267px) {
+  .elrai-carousel .slick-list {
+    margin: 0 -20px;
+  }
+}
+@media (max-width: 767px) {
+  .elrai-carousel .slick-list {
+    overflow: visible;
+    margin: 0 -10px;
+  }
+}
+.elrai-carousel .slick-arrow {
+  top: 200px;
+}
+@media (max-width: 1680px) {
+  .elrai-carousel .slick-arrow {
+    top: 160px;
+  }
+}
+@media (max-width: 1267px) {
+  .elrai-carousel .slick-arrow {
+    top: 150px;
+  }
+}
+@media (max-width: 1023px) {
+  .elrai-carousel .slick-arrow {
+    top: 100px;
+  }
+}
+.elrai-carousel .slick-arrow.slick-next {
+  right: -80px;
+}
+.elrai-carousel .slick-arrow.slick-prev {
+  left: -80px;
+}
+.elrai-carousel .item > * {
+  order: 2;
+}
+.elrai-carousel .item {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+.elrai-carousel .item a:nth-child(3) {
+  order: 1;
+}
+.elrai-carousel .item__img {
+  margin: 0;
+  border: 1px solid #f3f3f3;
+  background-size: 80%;
+  margin-bottom: 30px;
+}
+.elrai-carousel .item__img::before {
+  padding-bottom: 80%;
+}
+.elrai-carousel .item__percent,
+.elrai-carousel .item__size,
+.elrai-carousel .item__size::before,
+.elrai-carousel .item__icons {
+  display: none !important;
+}
+.elrai-carousel .item__title {
+  height: auto;
+  margin-bottom: 15px;
+}
+.elrai-carousel .item__oldprice {
+  color: var(--gray4);
+}
+.elrai-carousel .item__newprice {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}

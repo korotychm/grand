@@ -1,0 +1,131 @@
+.news-carousel {
+  position: relative;
+}
+.news-carousel .slick-slide {
+  padding: 0 30px;
+}
+@media (max-width: 1680px) {
+  .news-carousel .slick-slide {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1279px) {
+  .news-carousel .slick-slide {
+    padding: 0 12px;
+  }
+}
+.news-carousel .slick-list {
+  margin: 0 -30px;
+}
+@media (max-width: 1680px) {
+  .news-carousel .slick-list {
+    margin: 0 -15px;
+  }
+}
+@media (max-width: 1279px) {
+  .news-carousel .slick-list {
+    margin: 0 -12px;
+  }
+}
+.news-carousel .slick-list::before {
+  content: '';
+  display: block;
+}
+@media (hover) {
+  .news__item:hover .news-carousel__date {
+    color: var(--red);
+  }
+}
+.news__item a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (hover) {
+  .news__item a:hover {
+    text-decoration: underline;
+  }
+}
+.news__item a h3 {
+  margin: 0;
+}
+.news__tc {
+  text-transform: uppercase;
+  color: #828282;
+  margin-top: 20px;
+}
+@media (max-width: 1680px) {
+  .news__tc {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1267px) {
+  .news__tc {
+    margin-top: 10px;
+  }
+}
+.news__date {
+  margin: 30px 0 20px;
+  color: #828282;
+  transition: 0.5s;
+}
+@media (max-width: 1680px) {
+  .news__date {
+    margin: 10px 0 15px;
+  }
+}
+@media (max-width: 1267px) {
+  .news__date {
+    margin: 10px 0;
+  }
+}
+.news__overflow {
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.news__overflow .title2 {
+  margin: 0;
+}
+@media (max-width: 1680px) {
+  .news__overflow .title2 {
+    font-size: 20px;
+  }
+}
+.news__sale {
+  font-size: 75px;
+  margin: 0;
+  font-family: var(--text-font);
+  font-weight: 700;
+}
+@media (max-width: 1680px) {
+  .news__sale {
+    font-size: 60px;
+  }
+}
+.news__img {
+  padding-top: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media (hover) {
+  .news__img:hover .news__overflow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+.news-sales-carousel .news__img,
+.news-sales-carousel-4 .news__img {
+  padding-top: 150%;
+}

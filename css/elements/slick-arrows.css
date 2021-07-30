@@ -1,0 +1,70 @@
+.slick-arrow,
+.pagination-arrow {
+  box-shadow: none;
+  background: none;
+  border-radius: 50%;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  position: absolute;
+}
+@media (max-width: 1680px) {
+  .slick-arrow,
+  .pagination-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1279px) {
+  .slick-arrow,
+  .pagination-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+.slick-arrow.slick-disabled,
+.pagination-arrow.slick-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+@media (hover) {
+  .slick-arrow:hover,
+  .pagination-arrow:hover {
+    opacity: 0.5;
+  }
+}
+.slick-arrow::before,
+.pagination-arrow::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 21px;
+  margin-right: 2px;
+  margin-bottom: 1px;
+  background: url("../img/icons/arrow.svg") no-repeat center;
+  background-size: contain;
+}
+@media (max-width: 1680px) {
+  .slick-arrow::before,
+  .pagination-arrow::before {
+    width: 8px;
+    height: 17px;
+  }
+}
+@media (max-width: 1279px) {
+  .slick-arrow::before,
+  .pagination-arrow::before {
+    width: 6px;
+    height: 13px;
+  }
+}
+.slick-next,
+.pagination-next {
+  transform: rotate(180deg);
+}

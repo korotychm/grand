@@ -1,0 +1,69 @@
+.school-numbers {
+  background: var(--gray1);
+  padding: 100px 0;
+}
+@media (max-width: 1267px) {
+  .school-numbers {
+    padding: 40px 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .school-numbers {
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .school-numbers {
+    padding: 10px 16px;
+  }
+}
+.school-numbers .container {
+  display: flex;
+  justify-content: space-between;
+}
+.school-numbers__item h2 {
+  margin: 0;
+  font-family: var(--text-font);
+  font-size: 75px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+@media (max-width: 1680px) {
+  .school-numbers__item h2 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1267px) {
+  .school-numbers__item h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .school-numbers__item h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .school-numbers__item h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+.school-numbers__item h3 {
+  margin: 0;
+}
+@media (max-width: 1267px) {
+  .school-numbers__item h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1023px) {
+  .school-numbers__item h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .school-numbers__item h3 {
+    font-size: 10px;
+  }
+}

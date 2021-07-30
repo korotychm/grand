@@ -1,0 +1,97 @@
+.privilege__doc-link {
+  text-align: right;
+  margin-top: 70px;
+  margin-bottom: -50px;
+}
+@media (max-width: 1023px) {
+  .privilege__doc-link {
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege__doc-link {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+}
+.privilege__doc-link a {
+  color: inherit;
+}
+.privilege + .privilege-form {
+  padding-bottom: 0;
+}
+.privilege ~ .home-shops {
+  padding-bottom: 180px;
+}
+.privilege .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .privilege .container {
+    display: block;
+  }
+}
+.privilege__left {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .privilege__left {
+    width: 100%;
+  }
+}
+.privilege__left .title1 {
+  max-width: none;
+  margin-bottom: 30px;
+}
+@media (max-width: 1267px) {
+  .privilege__left .title1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege__left .title1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege__left .title1 {
+    margin-bottom: 10px;
+  }
+}
+.privilege__left p {
+  margin-bottom: 50px;
+}
+@media (max-width: 1267px) {
+  .privilege__left p {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege__left p {
+    font-size: 14px;
+  }
+}
+.privilege__left a {
+  color: var(--red);
+}
+.privilege__right {
+  width: 43%;
+}
+@media (max-width: 767px) {
+  .privilege__right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.privilege__right img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.privilege__catalog .title1 {
+  max-width: none;
+  margin-bottom: 50px;
+}

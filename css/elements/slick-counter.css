@@ -1,0 +1,29 @@
+.slick-counter,
+.pagination-counter {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--gray3);
+}
+@media (max-width: 1680px) {
+  .slick-counter,
+  .pagination-counter {
+    height: 40px;
+  }
+}
+@media (max-width: 1267px) {
+  .slick-counter,
+  .pagination-counter {
+    height: 30px;
+    width: 135px;
+  }
+}
+.slick-counter span,
+.pagination-counter span {
+  color: var(--red);
+}

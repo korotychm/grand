@@ -1,0 +1,30 @@
+.home-heading .container {
+  position: relative;
+}
+.home-heading .title-large {
+  margin: 0 0 30px;
+}
+@media (max-width: 1680px) {
+  .home-heading .title-large {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home-heading .title-large {
+    margin-bottom: 10px;
+  }
+}
+.home-heading .title1 {
+  margin: 0;
+  padding-left: 350px;
+}
+@media (max-width: 1680px) {
+  .home-heading .title1 {
+    padding-left: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .home-heading .title1 {
+    padding-left: 25px;
+  }
+}

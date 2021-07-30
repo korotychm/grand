@@ -1,0 +1,364 @@
+@media (max-width: 1680px) {
+  .privilege-form .section-top {
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+}
+.privilege-form__block {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  position: relative;
+}
+@media (max-width: 1680px) {
+  .privilege-form__block {
+    display: block;
+  }
+}
+.privilege-form__right {
+  padding-left: 50px;
+}
+@media (max-width: 1680px) {
+  .privilege-form__right {
+    padding-left: 0;
+  }
+}
+.privilege-form__left {
+  width: 380px;
+  margin-left: 90px;
+  text-align: center;
+}
+@media (max-width: 1680px) {
+  .privilege-form__left {
+    margin-left: 0;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form__left {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form__left {
+    width: 100%;
+  }
+}
+.privilege-form__left p {
+  color: var(--gray3);
+  margin: 30px 0;
+}
+.privilege-form__card {
+  position: relative;
+}
+@media (max-width: 1680px) {
+  .privilege-form__card {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form__card {
+    width: 250px;
+    margin: auto;
+  }
+}
+.privilege-form__card img {
+  width: 100%;
+  display: block;
+}
+.privilege-form__card-number,
+.privilege-form__card-name {
+  text-align: left;
+  position: absolute;
+  top: 57%;
+  padding: 0 12%;
+  color: var(--gray4);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+@media (max-width: 767px) {
+  .privilege-form__card-number,
+  .privilege-form__card-name {
+    font-size: 18px;
+    padding: 0 25px;
+  }
+}
+.privilege-form__card-name {
+  margin-top: 42px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .privilege-form__card-name {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
+.privilege-form__auth {
+  background: var(--gray1);
+  margin-top: 100px;
+  padding: 60px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.privilege-form__auth .btn {
+  margin-right: 0;
+}
+@media (max-width: 1267px) {
+  .privilege-form__auth {
+    flex-wrap: wrap;
+    padding: 30px 25px;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: 70px;
+  }
+  .privilege-form__auth > div {
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form__auth {
+    margin-top: 50px;
+  }
+  .privilege-form__auth > div {
+    width: 50%;
+    padding-right: 100px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form__auth {
+    margin-top: 30px;
+  }
+  .privilege-form__auth > div {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+.privilege-form__auth h3 {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-family: var(--text-font);
+  font-weight: normal;
+}
+.privilege-form__auth .reg-form {
+  width: calc(100% - 460px);
+  justify-content: flex-end;
+}
+@media (max-width: 1267px) {
+  .privilege-form__auth .reg-form {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form__auth .reg-form {
+    display: block;
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form__auth .reg-form {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 1680px) {
+  .privilege-form__auth .reg-form .btn {
+    width: 20%;
+    min-width: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form__auth .reg-form .btn {
+    width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form__auth .reg-form .btn {
+    width: 100%;
+  }
+}
+.privilege-form__auth .reg-form__input {
+  width: 32%;
+  margin: 0;
+  margin-right: 20px;
+}
+@media (max-width: 1680px) {
+  .privilege-form__auth .reg-form__input {
+    width: 36%;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form__auth .reg-form__input {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.privilege-form__auth .reg-form__input input {
+  background: var(--white);
+}
+.privilege-form__auth .reg-form__input input:focus + span::before {
+  opacity: 1 !important;
+}
+.privilege-form__auth .reg-form__input span {
+  display: inline-block;
+  background: transparent;
+}
+.privilege-form__auth .reg-form__input span > i {
+  position: relative;
+  z-index: 2;
+  font-style: normal;
+}
+.privilege-form__auth .reg-form__input span::before {
+  content: '';
+  background: var(--gray1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: calc(50% + 3px);
+  opacity: 0;
+  z-index: 1;
+}
+@media (max-width: 1023px) {
+  .privilege-form__auth .reg-form__input span::before {
+    height: 10px;
+  }
+}
+.privilege-form h2 {
+  max-width: none;
+  margin: 0 0 30px;
+}
+@media (max-width: 1680px) {
+  .privilege-form h2.title-large {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form h2.title-large {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form h2 {
+    font-size: 24px;
+    max-width: 70%;
+  }
+}
+@media (max-width: 1680px) {
+  .privilege-form h2.title1 {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form h2.title1 {
+    max-width: none !important;
+    margin-bottom: 20px;
+  }
+}
+.privilege-form .section-top__info {
+  display: block;
+}
+.privilege-form .section-top__info p {
+  padding: 0;
+  width: 100%;
+  padding-left: 40%;
+}
+@media (max-width: 1680px) {
+  .privilege-form .section-top__info {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    width: 400px;
+  }
+  .privilege-form .section-top__info p {
+    padding: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .privilege-form .section-top__info {
+    top: 0;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .privilege-form .section-top__info {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1680px) and (max-width: 767px) {
+  .privilege-form .section-top {
+    display: block;
+    padding-right: 0;
+  }
+}
+.privilege-form__loggedin {
+  margin-top: 30px;
+}
+@media (max-width: 1680px) {
+  .privilege-form__loggedin {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 460px);
+  }
+}
+.privilege-form__loggedin p {
+  color: var(--gray3);
+}
+.privilege__icons {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+}
+@media (max-width: 1680px) {
+  .privilege__icons {
+    margin-top: 0;
+  }
+}
+.privilege__icons div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 1680px) {
+  .privilege__icons div {
+    margin-bottom: 30px;
+  }
+}
+.privilege__icons div img {
+  width: 75px;
+  display: block;
+  margin-right: 30px;
+}
+@media (max-width: 1680px) {
+  .privilege__icons div img {
+    width: 55px;
+    margin-right: 20px;
+  }
+}
+.privilege__icons div p {
+  margin: 0;
+  color: var(--black);
+  font-size: 20px;
+  line-height: 1.2;
+}
+@media (max-width: 1680px) {
+  .privilege__icons div p {
+    font-size: 16px;
+  }
+}

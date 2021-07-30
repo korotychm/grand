@@ -1,0 +1,229 @@
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0,0,0,0.6);
+  left: 0;
+  top: 0;
+  width: calc(100vw - var(--scrollbar-width));
+  height: 100vh;
+}
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.popup__close::before,
+.popup__close::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--black);
+  position: absolute;
+  top: 12px;
+  left: 0;
+  transform: rotate(45deg);
+}
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+.popup .popup__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.auth-form {
+  background: var(--white);
+  padding: 60px 140px;
+  display: none;
+}
+@media (max-width: 1267px) {
+  .auth-form {
+    padding: 40px 90px;
+  }
+}
+@media (max-width: 1023px) {
+  .auth-form {
+    padding: 40px;
+  }
+}
+.auth-form.active {
+  display: block;
+}
+.auth-form--auth,
+.auth-form--forgot {
+  width: 800px;
+}
+@media (max-width: 1267px) {
+  .auth-form--auth,
+  .auth-form--forgot {
+    width: 650px;
+  }
+}
+@media (max-width: 1023px) {
+  .auth-form--auth,
+  .auth-form--forgot {
+    width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .auth-form--auth,
+  .auth-form--forgot {
+    width: calc(100vw - var(--scrollbar-width));
+  }
+}
+.auth-form--auth .reg-form__input,
+.auth-form--forgot .reg-form__input {
+  width: 100%;
+  margin-right: 0 !important;
+}
+.auth-form--reg {
+  width: 1140px;
+}
+@media (max-width: 1680px) {
+  .auth-form--reg {
+    width: 1000px;
+  }
+}
+@media (max-width: 1267px) {
+  .auth-form--reg {
+    width: 900px;
+  }
+}
+@media (max-width: 1023px) {
+  .auth-form--reg {
+    width: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .auth-form--reg {
+    width: calc(100vw - var(--scrollbar-width));
+  }
+}
+.auth-form .title2 {
+  margin-bottom: 50px;
+}
+@media (max-width: 1267px) {
+  .auth-form .title2 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .auth-form .title2 {
+    margin-bottom: 20px;
+  }
+}
+.auth-form .reg-form .link.auth-switch {
+  color: var(--gray3);
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form .link.auth-switch {
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+.auth-form .reg-form__social {
+  width: 100%;
+  display: flex;
+  margin: 10px 0 30px;
+}
+@media (max-width: 1267px) {
+  .auth-form .reg-form__social {
+    margin: 0 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form__social {
+    align-items: center;
+  }
+}
+.auth-form .reg-form__social a {
+  margin-right: 30px;
+  color: var(--gray3);
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form__social a {
+    margin: 0 10px;
+  }
+}
+@media (hover) {
+  .auth-form .reg-form__social a:hover {
+    color: var(--gold);
+  }
+}
+.auth-form .reg-form .btn {
+  width: auto;
+  min-width: 190px;
+}
+@media (max-width: 1267px) {
+  .auth-form .reg-form .btn {
+    height: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .auth-form .reg-form .btn {
+    min-width: 160px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form .btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.auth-form .reg-form .btn.auth-switch {
+  border: 3px solid var(--gray3);
+  color: var(--gray3);
+}
+@media (hover) {
+  .auth-form .reg-form .btn.auth-switch:hover {
+    background: var(--gray3);
+    color: var(--white);
+  }
+}
+.auth-form .reg-form__bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--gray3);
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form__bottom {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.auth-form .reg-form__bottom .link {
+  margin-left: 75px;
+}
+@media (max-width: 767px) {
+  .auth-form .reg-form__bottom .link {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.auth-form .reg-form__rememberme input:checked + label .check {
+  background-image: url("../img/icons/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.auth-form .reg-form__rememberme label {
+  position: relative;
+  padding-left: 30px;
+  user-select: none;
+}
+.auth-form .reg-form__rememberme label .check {
+  top: 1px;
+}

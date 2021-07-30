@@ -1,0 +1,15 @@
+:root {
+  --black: #000;
+  --white: #FFF;
+  --gold: #CAB786;
+  --red: #FF001F;
+  --gray1: #F3F3F3;
+  --gray2: #E5E5E5;
+  --gray3: #828282;
+  --gray4: #BDBDBD;
+  --grand: #366485;
+  --youg: #148C84;
+  --elrai: #662D91;
+  --text-font: 'Lato', Helvetica, Arial, sans-serif;
+  --heading-font: 'Raleway', Helvetica, Arial, sans-serif;
+}

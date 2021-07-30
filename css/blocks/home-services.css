@@ -1,0 +1,115 @@
+.home-services .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+@media (max-width: 1680px) {
+  .home-services .container {
+    display: block;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 20px;
+  }
+}
+.home-services__right {
+  border-top: 1px solid #c4c4c4;
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1680px) {
+  .home-services__right {
+    border: none;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .home-services__right {
+    display: block;
+    padding-top: 30px;
+  }
+}
+.home-services__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .home-services__img {
+    display: none;
+  }
+}
+.home-services__accordion {
+  padding-right: 220px;
+}
+@media (max-width: 1680px) {
+  .home-services__accordion {
+    padding-right: 110px;
+  }
+}
+@media (max-width: 1023px) {
+  .home-services__accordion {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home-services__accordion {
+    padding-right: 0;
+  }
+}
+.home-services__accordion-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .home-services__accordion-item {
+    margin-bottom: 15px;
+  }
+}
+.home-services__accordion-item:last-child {
+  margin: 0 !important;
+}
+.home-services__accordion-item h3 {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  transition: 0.5s;
+}
+.home-services__accordion-item.active h3::after,
+.home-services__accordion-item:hover h3::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 9px;
+  position: absolute;
+  top: 11px;
+  right: -60px;
+  background: url("../img/icons/service-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1680px) {
+  .home-services__accordion-item.active h3::after,
+  .home-services__accordion-item:hover h3::after {
+    top: 8px;
+  }
+}
+.home-services__accordion-item div {
+  padding-top: 40px;
+  display: none;
+  color: var(--gray3);
+  padding-bottom: 60px;
+}
+@media (max-width: 1680px) {
+  .home-services__accordion-item div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .home-services__accordion-item div {
+    padding-top: 20px;
+  }
+}
+.home-services__accordion-item:first-child div {
+  display: block;
+}

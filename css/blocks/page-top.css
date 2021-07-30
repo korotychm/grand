@@ -1,0 +1,235 @@
+.page-top {
+  position: relative;
+  background-size: cover;
+}
+.page-top::before {
+  content: '';
+  display: block;
+  padding-bottom: 50%;
+  background: #35342c;
+  opacity: 0.4;
+}
+@media (max-width: 767px) {
+  .page-top::before {
+    padding-bottom: 150%;
+  }
+}
+.page-top .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-top__text {
+  display: inline-block;
+  max-width: 770px;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  margin-top: -50px;
+}
+@media (max-width: 1267px) {
+  .page-top__text {
+    max-width: 500px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-top__text {
+    left: 75px;
+    max-width: 400px;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 767px) {
+  .page-top__text {
+    left: 36px;
+    max-width: 320px;
+  }
+}
+.page-top__title {
+  display: inline-block;
+  margin: 0;
+  font-size: 75px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+@media (max-width: 1680px) {
+  .page-top__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1267px) {
+  .page-top__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-top__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .page-top__title {
+    font-size: 26px;
+  }
+}
+.page-top__subtitle {
+  margin: 30px 0;
+  width: 350px;
+  position: absolute;
+  left: 50%;
+}
+@media (max-width: 1680px) {
+  .page-top__subtitle {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 1023px) {
+  .page-top__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .page-top__subtitle {
+    font-size: 14px;
+    left: 30px;
+    margin: 5px 0;
+    width: 280px;
+  }
+}
+.page-head .page-top::before {
+  padding-bottom: 40%;
+}
+@media (max-width: 767px) {
+  .page-head .page-top::before {
+    padding-bottom: 50%;
+  }
+}
+.page-head--catalog {
+  position: relative;
+  margin-top: 100px;
+}
+@media (max-width: 1680px) {
+  .page-head--catalog {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1267px) {
+  .page-head--catalog {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-head--catalog {
+    margin-top: 30px;
+  }
+}
+.page-head--catalog .page-top {
+  height: 500px;
+}
+@media (max-width: 1680px) {
+  .page-head--catalog .page-top {
+    height: 400px;
+  }
+}
+@media (max-width: 1267px) {
+  .page-head--catalog .page-top {
+    height: 300px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-head--catalog .page-top {
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .page-head--catalog .page-top {
+    height: 170px;
+  }
+}
+.page-head--catalog .page-top .container {
+  top: 0;
+  transform: translateX(-50%);
+}
+.page-head--catalog .page-top::before {
+  padding: 0;
+  height: 100%;
+}
+.page-head--catalog .page-top__text {
+  margin: 0;
+  max-width: 1200px;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1267px) {
+  .page-head--catalog .page-top__text {
+    top: 70px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-head--catalog .page-top__text {
+    top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .page-head--catalog .page-top__text {
+    top: 30px;
+  }
+}
+.page-head--catalog .page-top__title {
+  white-space: nowrap;
+}
+.page-head--catalog .page-top__subtitle {
+  width: 500px;
+}
+@media (max-width: 1267px) {
+  .page-head--catalog .page-top__subtitle {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1023px) {
+  .page-head--catalog .page-top__subtitle {
+    margin-top: 10px;
+    left: 0;
+    padding-left: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .page-head--catalog .page-top__subtitle {
+    margin-top: 5px;
+    padding-left: 30px;
+    width: 300px;
+  }
+}
+.page-head--catalog .page-head__nav {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1267px) {
+  .page-head--catalog .page-head__nav {
+    bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .page-head--catalog .page-head__nav {
+    display: none;
+  }
+}
+.page-head--catalog .page-head__nav a {
+  color: var(--white);
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+  text-decoration: none;
+}
+@media (hover) {
+  .page-head--catalog .page-head__nav a:hover {
+    border-bottom: 1px solid var(--white);
+  }
+}

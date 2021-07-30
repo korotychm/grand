@@ -1,0 +1,132 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  width: calc(100% + 20px);
+}
+@media (max-width: 1023px) {
+  .tags {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: calc(100% + 25px);
+  }
+}
+@media (max-width: 767px) {
+  .tags {
+    width: calc(100% + 32px);
+    padding: 0 16px;
+    margin-left: -16px;
+  }
+}
+.tags a {
+  padding: 11px 25px 13px;
+  border: 1px solid var(--gold);
+  margin: 0 20px 20px 0;
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media (max-width: 1680px) {
+  .tags a {
+    padding: 15px 20px 14px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  .tags a {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 767px) {
+  .tags a {
+    margin-right: 10px;
+  }
+}
+.tags a:hover,
+.tags a.active {
+  background: var(--gold);
+  color: var(--white);
+}
+.tags__trigger {
+  display: none;
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .tags__trigger {
+    display: block;
+    background: var(--gray1);
+    padding: 20px 25px;
+  }
+  .tags__trigger div {
+    position: relative;
+    display: inline-block;
+  }
+  .tags__trigger div::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icons/down.svg") no-repeat center;
+    transition: 0.5s;
+  }
+  .tags__trigger + .tags {
+    display: none !important;
+  }
+  .tags__trigger.active {
+    margin-bottom: 30px;
+  }
+  .tags__trigger.active div::after {
+    transform: rotate(180deg);
+  }
+  .tags__trigger.active + .tags {
+    display: grid !important;
+  }
+}
+@media (max-width: 767px) {
+  .tags--mobile-select {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #bdbdbd;
+    padding: 15px 15px 0;
+    display: flex !important;
+    flex-direction: column;
+    margin-left: 0;
+    position: relative;
+  }
+  .tags--mobile-select::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icons/down.svg") no-repeat center;
+    transition: 0.5s;
+  }
+  .tags--mobile-select a {
+    margin-bottom: 15px;
+    display: block;
+    text-align: left !important;
+    padding: 0;
+    border: none;
+    background: var(--white) !important;
+    color: var(--black) !important;
+    font-size: 16px;
+    display: none;
+    order: 2;
+  }
+  .tags--mobile-select a.active {
+    display: block;
+    order: 1;
+  }
+  .tags--mobile-select.active a {
+    display: block;
+  }
+  .tags--mobile-select.active::after {
+    transform: rotate(180deg);
+  }
+}

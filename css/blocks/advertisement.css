@@ -1,0 +1,8 @@
+.advertisement {
+  padding-bottom: 100px;
+}
+.advertisement img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

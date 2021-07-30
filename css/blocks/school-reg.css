@@ -1,0 +1,157 @@
+.school-reg .container {
+  position: relative;
+  padding-right: 320px;
+}
+@media (max-width: 1267px) {
+  .school-reg .container {
+    padding-right: 0;
+  }
+}
+.school-reg__img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45%;
+}
+@media (max-width: 1267px) {
+  .school-reg__img {
+    right: 30px;
+    width: 50%;
+    top: 41%;
+  }
+}
+@media (max-width: 1023px) {
+  .school-reg__img {
+    width: 45%;
+    top: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .school-reg__img {
+    display: none;
+  }
+}
+.school-reg__img img {
+  width: 100%;
+}
+.school-reg__form {
+  padding: 70px 440px 120px 50px;
+  border: 1px solid #c4c4c4;
+}
+@media (max-width: 1680px) {
+  .school-reg__form {
+    padding: 50px 230px 100px 50px;
+  }
+}
+@media (max-width: 1267px) {
+  .school-reg__form {
+    padding: 70px 30px;
+  }
+  .school-reg__form .reg-form {
+    display: block;
+    max-width: 42%;
+    position: relative;
+  }
+  .school-reg__form .reg-form__input {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .school-reg__form .reg-form__radios {
+    justify-content: space-between;
+  }
+  .school-reg__form .reg-form__radio {
+    margin: 0;
+  }
+  .school-reg__form .reg-form__agree {
+    width: 250%;
+  }
+  .school-reg__form .reg-form__agree .check {
+    top: 1px;
+  }
+}
+.school-reg__form h2 {
+  margin-bottom: 50px;
+}
+@media (max-width: 1267px) {
+  .school-reg__form h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .school-reg__form h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .school-reg__form h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+}
+.school-reg__form .btn {
+  width: calc(50% - 10px);
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+@media (max-width: 1680px) {
+  .school-reg__form .btn {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.school-reg__form .btn:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 1267px) {
+  .school-reg__form .btn:last-child {
+    position: absolute;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .school-reg__form .btn:last-child {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .school-reg__form .btn:last-child {
+    position: static;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1267px) and (max-width: 1023px) {
+  .school-reg__form .reg-form {
+    max-width: 48%;
+  }
+  .school-reg__form .reg-form__radio {
+    padding-top: 3px;
+    font-size: 16px;
+  }
+  .school-reg__form .reg-form__agree {
+    width: 200%;
+  }
+}
+@media (max-width: 1267px) and (max-width: 767px) {
+  .school-reg__form {
+    padding: 50px 16px;
+  }
+  .school-reg__form .reg-form {
+    max-width: 100%;
+  }
+  .school-reg__form .reg-form__agree {
+    width: 100%;
+  }
+  .school-reg__form .reg-form__radios {
+    justify-content: flex-start;
+  }
+  .school-reg__form .reg-form__radio {
+    margin-right: 30px;
+  }
+}

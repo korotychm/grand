@@ -1,0 +1,129 @@
+.elrai-carousel
+  .section-top
+    @media (max-width: 1680px)
+      grid-template-columns: 2fr 1fr;
+      @media (max-width: 767px)
+        padding-right 0
+      &__info
+        display block
+        margin-top -150px
+        @media (max-width: 1023px)
+          margin-top -95px
+        @media (max-width: 767px)
+          margin-top 0
+          .text2
+            padding-right 50px
+        a
+          margin-top 70px
+          display inline-block
+          @media (max-width: 1023px)
+            margin-top 30px
+            float right
+          @media (max-width: 767px)
+            position static
+    @media (max-width: 1023px)
+      grid-template-columns 1fr 1fr
+    @media (max-width: 767px)
+      display block
+  h2
+    max-width 800px
+    margin 0 0 30px
+    @media (max-width: 1680px)
+      max-width 600px
+      &.title-large
+        font-size 64px
+    @media (max-width: 1023px)
+      max-width 350px
+      &.title-large
+        font-size  32px
+        margin-bottom 20px
+    @media (max-width: 767px)
+      max-width 100%
+      &.title-large
+        font-size 24px
+        margin-bottom 10px
+        max-width 90%
+      &.title1
+        max-width 90% !important
+  &__carousel
+    padding-left: 400px
+    @media (max-width: 1680px)
+      padding-left 70px
+      padding-right 100px
+    @media (max-width: 767px)
+      padding 0
+      width 60%
+      margin-top 70px
+    .slick
+      &::before
+      &::after
+        content ''
+        position absolute
+        display block
+        pointer-events none
+        left -30px
+        top 0
+        height 100%
+        width 30px
+        background var(--white)
+        z-index 2
+        @media (max-width: 767px)
+          display none
+      &::after
+        left auto
+        right -30px
+  .slick-slide
+    margin 0 30px
+    @media (max-width: 1267px)
+      margin 0 20px
+    @media (max-width: 767px)
+      margin 0 10px
+  .slick-list
+    margin 0 -30px
+    @media (max-width: 1267px)
+      margin 0 -20px
+    @media (max-width: 767px)
+      overflow visible
+      margin 0 -10px
+  .slick-arrow
+    top 200px
+    @media (max-width: 1680px)
+      top 160px
+    @media (max-width: 1267px)
+      top 150px
+    @media (max-width: 1023px)
+      top 100px
+    &.slick-next
+      right -80px
+    &.slick-prev
+      left -80px
+  .item > *
+    order 2
+  .item
+    padding 0
+    display flex
+    flex-direction column
+    box-shadow none
+    a:nth-child(3)
+      order 1
+    &__img
+      margin 0
+      border 1px solid #F3F3F3
+      background-size 80%
+      margin-bottom 30px
+      &::before
+        padding-bottom 80%
+    &__percent
+    &__size
+    &__size::before
+    &__icons
+      display none !important
+    &__title
+      height auto
+      margin-bottom 15px
+    &__oldprice
+      color var(--gray4)
+    &__newprice
+      font-size 16px
+      font-weight 400
+      color var(--black)

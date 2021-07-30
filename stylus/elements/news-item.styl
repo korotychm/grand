@@ -1,0 +1,87 @@
+.news-carousel
+  position relative
+  .slick-slide
+    padding 0 30px
+    @media (max-width: 1680px)
+      padding 0 15px
+    @media (max-width: 1279px)
+      padding 0 12px
+  .slick-list
+    margin 0 -30px
+    @media (max-width: 1680px)
+      margin 0 -15px
+    @media (max-width: 1279px)
+      margin 0 -12px
+    &::before
+      content ''
+      display block
+.news
+  &__item
+    &:hover
+      @media (hover)
+        .news-carousel__date
+          color var(--red)
+    a
+      color inherit
+      text-decoration none
+      &:hover
+        @media (hover)
+          text-decoration underline
+      h3
+        margin 0
+  &__tc
+    text-transform uppercase
+    color #828282
+    margin-top 20px
+    @media (max-width: 1680px)
+      margin-top 15px
+    @media (max-width: 1267px)
+      margin-top 10px
+  &__date
+    margin 30px 0 20px
+    color #828282
+    transition .5s
+    @media (max-width: 1680px)
+      margin 10px 0 15px
+    @media (max-width: 1267px)
+      margin 10px 0
+  &__overflow
+    position absolute
+    background rgba(0, 0, 0, 0.4)
+    color var(--white)
+    width 100%
+    height 100%
+    top 0
+    left 0
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    opacity 0
+    pointer-events none
+    transition .5s
+    .title2
+      margin 0
+      @media (max-width: 1680px)
+        font-size 20px
+  &__sale
+    font-size 75px
+    margin 0
+    font-family var(--text-font)
+    font-weight 700
+    @media (max-width: 1680px)
+      font-size 60px
+  &__img
+    padding-top 100%
+    background-position center
+    background-size cover
+    position relative
+    &:hover
+      @media (hover)
+        .news__overflow
+          opacity 1
+          pointer-events auto
+
+.news-sales-carousel .news__img
+.news-sales-carousel-4 .news__img
+  padding-top 150%

@@ -1,0 +1,57 @@
+.privilege
+  &__doc-link
+    text-align right
+    margin-top 70px
+    margin-bottom -50px
+    @media (max-width: 1023px)
+      margin-top 50px
+      margin-bottom -30px
+    @media (max-width: 767px)
+      margin-top 30px
+      margin-bottom -10px
+    a
+      color inherit
+  + .privilege-form
+    padding-bottom 0
+  ~ .home-shops
+    padding-bottom 180px
+  .container
+    display flex
+    justify-content space-between
+    @media (max-width: 767px)
+      display block
+  &__left
+    width 50%
+    @media (max-width: 767px)
+      width 100%
+    .title1
+      max-width none
+      margin-bottom 30px
+      @media (max-width: 1267px)
+        font-size 24px
+        margin-bottom 20px
+      @media (max-width: 1023px)
+        font-size 18px
+      @media (max-width: 767px)
+        margin-bottom 10px
+    p
+      margin-bottom 50px
+      @media (max-width: 1267px)
+        margin-bottom 30px
+      @media (max-width: 1023px)
+        font-size 14px
+    a
+      color var(--red)
+  &__right
+    width 43%
+    @media (max-width: 767px)
+      width 100%
+      margin-top 30px
+    img
+      display block
+      width 100%
+      height auto
+  &__catalog
+    .title1
+      max-width none
+      margin-bottom 50px

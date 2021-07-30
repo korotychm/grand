@@ -1,0 +1,139 @@
+.blog-page
+  .title1
+    margin-bottom: 50px
+    @media (max-width: 1267px)
+      margin-bottom 30px
+  .tags
+    margin-bottom 70px
+    @media (max-width: 1267px)
+      margin-bottom 30px
+  .blog
+    &__adv
+      img
+        width 100%
+        height auto
+        display block
+    &__grid
+      display grid
+      grid-template-columns 1fr 1fr 1fr 1fr
+      grid-gap 40px
+      align-items start
+      @media (max-width: 1267px)
+        grid-template-columns 1fr 1fr
+        grid-gap 30px
+      @media (max-width: 767px)
+        grid-gap 20px
+    &__category
+      position absolute
+      background #4F4F4F
+      color #fff
+      padding 14px 35px 15px
+      top 20px
+      @media (max-width: 767px)
+        display none
+    &__img
+      position relative
+      background-size cover
+      background-position center
+      transition .5s
+      &::before
+        content ''
+        display block
+        padding-bottom 90%
+        @media (min-width: 1268px)
+          padding-bottom 110%
+    &__text
+      .title2
+        font-size 20px
+        text-transform none
+        margin 20px 0 10px
+        @media (max-width: 1267px)
+          font-size 22px
+        @media (max-width: 1023px)
+          font-size 20px
+          margin 10px 0
+        @media (max-width: 767px)
+          font-size 14px !important
+          margin 10px 0 5px
+      .text2
+        margin 0
+        color #4F4F4F
+        @media (max-width: 1023px)
+          font-size 16px
+        @media (max-width: 767px)
+          font-size 12px !important
+    &__item
+      text-decoration none
+      color inherit
+      position relative
+      &:last-of-type
+        @media (max-width: 1267px)
+          display none
+      &:nth-child(6n+3)
+      &:nth-child(6n+4)
+        @media (min-width: 1268px)
+          grid-column span 2
+          .blog__img::before
+            padding-bottom 65%
+          .blog__img::after
+            content ''
+            position absolute
+            top 0
+            left 0
+            display block
+            width 100%
+            height 100%
+            background linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 74.48%)
+          .blog__text
+            position absolute
+            left 15px
+            bottom 30px
+            color var(--white)
+            .text2
+              color var(--white)
+            @media (min-width: 1681px)
+              .title2
+                font-size 28px
+              .text2
+                font-size 18px
+      &:nth-child(3n+3)
+        @media (max-width: 1267px)
+          grid-column span 2
+          .blog__img::before
+            padding-bottom 65%
+          .blog__img::after
+            content ''
+            position absolute
+            top 0
+            left 0
+            display block
+            width 100%
+            height 100%
+            background linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 74.48%)
+          .blog__text
+            position absolute
+            left 15px
+            bottom 30px
+            color var(--white)
+            @media (max-width: 767px)
+              bottom 20px
+            .title2
+              font-size 28px
+              @media (max-width: 1023px)
+                font-size 24px
+            .text2
+              color var(--white)
+              font-size 18px
+              @media (max-width: 1023px)
+                font-size 16px
+      &:hover
+        .blog__img
+          @media (hover)
+            opacity .6
+    &__more-btn
+      margin-top 70px
+      text-align center
+      @media (max-width: 1023px)
+        margin-top 50px
+      @media (max-width: 767px)
+        margin-top 30px

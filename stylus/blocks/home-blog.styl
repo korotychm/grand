@@ -1,0 +1,97 @@
+.home-blog
+  @media (max-width: 767px)
+    .section-top__info
+      margin-bottom 35px
+  &__grid
+    display grid
+    grid-template-columns 1fr 1fr
+    border-top: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+    @media (max-width: 1267px)
+      border none
+    @media (max-width: 767px)
+      display block
+  .blog
+    &__category
+      display none
+    &__text
+      position absolute
+      top 50%
+      transform translateY(-50%)
+      @media (max-width: 1267px)
+        padding 25px
+        background rgba(255, 255, 255, 0.7)
+        max-width 70%
+      @media (max-width: 1023px)
+        padding 15px
+      h3
+        margin 0
+        margin-bottom 15px
+        @media (max-width: 1267px)
+          font-size 18px
+          margin-bottom 10px
+        @media (max-width: 767px)
+          font-size 16px
+          margin-bottom 5px
+      p
+        max-width 280px
+        float left
+        margin 0
+        @media (max-width: 1267px)
+          font-size 14px
+        @media (max-width: 767px)
+          font-size 12px
+    &__img
+      background-size cover
+      width calc(100% - 160px);
+      left 80px
+      top 40px
+      position absolute
+      opacity 0
+      pointer-events none
+      transition .5s
+      @media (max-width: 1680px)
+        width calc(100% - 80px);
+        left 40px
+      @media (max-width: 1267px)
+        position static
+        width 100%
+        height auto
+        opacity 1
+      &::before
+        content ''
+        display block
+        padding-bottom 65%
+    &__item
+      color inherit
+      padding-top 50%
+      position relative
+      border-bottom: 1px solid #C4C4C4;
+      border-right: 1px solid #C4C4C4;
+      @media (max-width: 1267px)
+        padding-top 0
+        border none
+      @media (max-width: 767px)
+        display block
+      &:hover
+        .blog__img
+          @media (hover)
+            opacity 1
+      &:nth-child(odd)
+        .blog__text
+          text-align right
+          right 240px
+          p
+            float right
+          @media (max-width: 1680px)
+            right 110px
+          @media (max-width: 1267px)
+            right 40px
+      &:nth-child(even)
+        .blog__text
+          text-align left
+          left 240px
+          @media (max-width: 1680px)
+            left 110px
+          @media (max-width: 1267px)
+            left 40px

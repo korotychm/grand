@@ -1,0 +1,299 @@
+.item
+  background var(--white)
+  padding 30px
+  position relative
+  @media (max-width: 1023px)
+    padding 15px
+  a
+    text-decoration none
+  &__brand
+    display block
+  &__title
+    margin-top 12px
+    height 50px
+    text-decoration underline
+    @media (max-width: 1023px)
+      height 30px
+    @media (max-width: 767px)
+      height 24px
+  &__img
+    margin 15px 0 50px
+    width 100%
+    position relative
+    background-size contain
+    background-position center
+    background-repeat no-repeat
+    @media (max-width: 1023px)
+      margin 20px 0 30px
+    &::before
+      content ''
+      display block
+      padding-bottom 100%
+  &__price
+    display inline-block
+    position relative
+    padding-top 24px
+    @media (max-width: 1023px)
+      padding-top 21px
+  &__sale
+    position absolute
+    width 100%
+    left 0
+    top 0
+    display flex
+    justify-content space-between
+  &__size
+    position absolute
+    left 0
+    bottom 0
+    transform: translateY(100%);
+    width 100%
+    padding 0 30px 30px
+    background var(--white)
+    flex-wrap wrap
+    display none
+    box-shadow 0px 0px 20px rgba(0, 0, 0, 0.2)
+    &::before
+      content ''
+      width 100%
+      height 35px
+      display block
+      position absolute
+      left 0
+      top -33px
+      background #fff
+    div
+      margin-right 30px
+      &:last-child
+        margin 0
+    h4
+      margin 0
+      width 100%
+      font-size 16px
+      font-weight 400
+      font-family var(--text-font)
+      margin-bottom 12px
+    h5
+      margin 0
+      color var(--gray3)
+      margin-bottom 3px
+    h6
+      margin 0
+  &:hover
+    @media (hover)
+      z-index 2
+      box-shadow 0px 0px 20px rgba(0, 0, 0, 0.2)
+      .item__size
+        display flex
+  &__icons
+    display flex
+    justify-content flex-end
+    position absolute
+    bottom 32px
+    right 30px
+    @media (max-width: 1023px)
+      display block
+      bottom 20px
+      right 15px
+  &__icon
+    cursor pointer
+    width 28px
+    height 21px
+    margin-left 15px
+    transition .5s
+    color var(--gray3)
+    position relative
+    @media (max-width: 1023px)
+      margin-top 20px
+      width 18px
+      height 14px
+    &::after
+      content 'Добавить в избранное'
+      position absolute
+      display block
+      background var(--gray3)
+      right 50%
+      top -55px
+      padding 10px
+      color #fff
+      white-space nowrap
+      font-size 10px
+      pointer-events none
+      display none
+    &::before
+      content ''
+      display block
+      position absolute
+      border 20px solid transparent
+      border-right 20px solid var(--gray3)
+      top -45px
+      right 50%
+      display none
+    &:hover
+      @media (hover)
+        &::before
+        &::after
+          display block
+    svg
+      height 21px
+    &--wishlist
+      &:hover
+        @media (hover)
+          color var(--red)
+      &.active
+        color var(--red)
+        svg
+          g#heart
+            transition .5s
+            fill var(--red)
+        &::after
+          content 'Убрать из избранного'
+    &--compare
+      &::after
+        content 'Добавить в сравнение'
+      &:hover
+        @media (hover)
+          color var(--black)
+      &.active
+        color var(--gold)
+        &::after
+          content 'Убрать из сравнения'
+.interior__item
+  .item
+    display block
+    opacity 0
+    pointer-events none
+    position absolute
+    z-index 2
+    width 550px
+    padding 40px
+    padding-left 280px
+    border 1px solid #C4C4C4
+    transition .5s
+    @media (min-width: 768px) and (max-width: 1267px)
+      &::after
+        content ''
+    @media (max-width: 767px)
+      width 100% !important
+      box-shadow none
+      padding 10px !important
+      display flex
+      flex-direction column
+      align-items flex-start
+      a
+        order 3
+        &:nth-of-type(3)
+          order 1
+    &__price
+      @media (max-width: 767px)
+        order 4
+        padding-top 0
+    &__newprice
+      @media (max-width: 767px)
+        font-size 14px
+    &__sale
+      @media (max-width: 767px)
+        right -10px
+        transform translateX(100%)
+        left auto
+        top 2px
+    &__oldprice
+      @media (max-width: 767px)
+        font-size 10px
+        color var(--gray3)
+    &__percent
+      @media (max-width: 767px)
+        display none
+    &__brand
+      @media (max-width: 767px)
+        font-size 12px
+    &__title
+      height auto
+      margin-bottom 20px
+      @media (max-width: 767px)
+        order 2
+        font-size 10px
+        margin-top 5px
+    &__img
+      position absolute
+      top 40px
+      left 40px
+      margin 0
+      width 200px
+      @media (max-width: 767px)
+        position static
+        width 85px
+        margin-bottom 10px
+      &::before
+        padding-bottom 110%
+    &__icons
+      top 20px
+      right 20px
+      @media (max-width: 1267px)
+        right 50px
+      @media (max-width: 767px)
+        top 10px
+        right 10px
+        > *
+          margin 0
+    &__icon--compare
+      display none
+    &__size
+      box-shadow none
+      margin-top 30px
+      display flex
+      position static
+      transform none
+      padding 0
+      @media (max-width: 767px)
+        display none !important
+      &::before
+        display none
+
+.catalog__grid--2
+  .item
+    @media (max-width: 1279px)
+      padding 20px
+  .item__icons
+    display flex
+  .item__oldprice
+  .item__percent
+    font-size 14px
+  .item__newprice
+    font-size 24px
+  .item__brand
+    font-size 20px
+  .item__title
+    font-size 14px
+  .item__icon
+    width 20px
+    height 16px
+    margin-left 25px
+  @media (min-width: 1279px)
+    .item
+      padding 20px
+      padding-left 220px
+      transition box-shadow .5s
+      &__title
+        height auto
+        margin-bottom 20px
+      &__img
+        position absolute
+        top 20px
+        left 20px
+        margin 0
+        width 180px
+        &::before
+          padding-bottom 110%
+      &__icons
+        top 20px
+        right 20px
+      &__size
+        box-shadow none
+        margin-top 30px
+        display flex
+        position static
+        transform none
+        padding 0
+        &::before
+          display none

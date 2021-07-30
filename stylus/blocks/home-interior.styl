@@ -1,0 +1,42 @@
+.home-interior
+  .interior__item
+    margin 0
+    @media (max-width: 767px)
+      margin 0 16px
+  .title1
+    margin-bottom 100px
+    max-width 400px
+  &__slider
+    position relative
+    &::before
+    &::after
+      content ''
+      display block
+      position absolute
+      z-index 2
+      left 0
+      top 0
+      height 101%
+      width calc(50vw - (var(--scrollbar-width) / 2))
+      background var(--white)
+      transform translateX(-100%)
+    &::after
+      left auto
+      right 0
+      transform translateX(100%)
+      @media (max-width: 767px)
+        display none
+    .slick-arrow
+    .slick-counter
+      top -65px
+      right 0
+      @media (max-width: 1267px)
+        top -45px
+      &.slick-prev
+        right 150px
+        @media (max-width: 1279px)
+          right 105px
+    .slick-list
+      overflow visible
+      @media (max-width: 767px)
+        margin 0 -16px

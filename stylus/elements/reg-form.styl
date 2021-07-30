@@ -1,0 +1,98 @@
+.reg-form
+  display flex
+  flex-wrap wrap
+  align-items center
+  > *
+    margin-bottom 20px
+  > *:last-child
+    margin-bottom 0
+  &__input
+    width calc(50% - 10px)
+    position relative
+    @media (max-width: 767px)
+      width 100%
+      margin-right 0 !important
+    &:nth-child(odd)
+      margin-right 20px
+    span
+      position absolute
+      background #fff
+      padding 0 5px
+      left 15px
+      bottom 22px
+      color var(--gray3)
+      transition .5s
+      @media (max-width: 1023px)
+        bottom 17px
+    &.focused
+    &.filled
+      span
+        bottom auto
+        top -11px
+        @media (max-width: 1023px)
+          top -7px
+        @media (max-width: 767px)
+          top -11px
+    input
+      width 100%
+      height 60px
+      border 3px solid var(--gray3)
+      padding 21px 17px 20px
+      font-size inherit
+      font-family inherit
+      font-weight inherit
+      border-radius 0
+      @media (max-width: 1023px)
+        height 50px
+        padding 16px 17px 15px
+      &:focus
+        border 3px solid var(--gold)
+  .btn
+    min-width 220px
+    margin-right 27px
+    @media (max-width: 767px)
+      margin-right 0
+      width 100%
+  &__radios
+    display flex
+    padding 10px 0
+  &__radio
+    padding-left 40px
+    position relative
+    display block
+    margin-right 50px
+    font-size 20px
+    user-select none
+    cursor pointer
+    .radio
+      position absolute
+      left 0
+      top 0
+      display block
+      width 26px
+      height 26px
+      border 2px solid var(--gray3)
+      border-radius 50%
+    input:checked + .radio::after
+      content ''
+      position absolute
+      width 14px
+      height 14px
+      left 4px
+      top 4px
+      background var(--gray3)
+      border-radius 50%
+  &__agree
+    padding-left 30px
+    position relative
+    display block
+    color var(--gray3)
+    font-size 16px
+    font-weight 400
+    font-family var(--text-font)
+    user-select none
+    cursor pointer
+    @media (max-width: 767px)
+      font-size 12px
+    a
+      color inherit

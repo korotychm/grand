@@ -1,0 +1,54 @@
+.news-carousel
+  background inherit
+  @media (max-width: 1279px)
+    padding 0 50px
+  @media (max-width: 767px)
+    padding 0
+    width 60%
+    .slick-list
+      overflow visible
+  &::before
+  &::after
+    content ''
+    position absolute
+    display block
+    pointer-events none
+    left -30px
+    top 0
+    height 100%
+    width 30px
+    background inherit
+    z-index 2
+    @media (max-width: 1680px)
+      left -20px
+      width 20px
+    @media (max-width: 1279px)
+      left 30px
+    @media (max-width: 767px)
+      left -16px
+      width 16px
+  &::after
+    left auto
+    right -30px
+    @media (max-width: 1680px)
+      right -20px
+    @media (max-width: 1279px)
+      right 30px
+    @media (max-width: 767px)
+      display none
+  .slick-arrow
+    top 200px
+    @media (max-width: 767px)
+      display none
+    &.slick-next
+      right -80px
+      @media (max-width: 1680px)
+        right -60px
+      @media (max-width: 1279px)
+        right 0
+    &.slick-prev
+      left -80px
+      @media (max-width: 1680px)
+        left -60px
+      @media (max-width: 1279px)
+        left 0

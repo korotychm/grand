@@ -1,0 +1,35 @@
+.marquee
+  margin-bottom 100px
+  padding 25px 0
+  border-top 1px solid var(--black)
+  border-bottom 1px solid var(--black)
+  @media (max-width: 1023px)
+    margin-left -25px
+    margin-right -25px
+    padding 15px 0
+    margin-bottom 70px
+  @media (max-width: 767px)
+    margin-bottom 50px
+  .slick-slide
+    margin 0 25px
+    @media (max-width: 767px)
+      margin 0 20px
+  .slick-list
+    margin 0 -25px
+    @media (max-width: 767px)
+      margin 0 -20px
+  .slick-track
+    display flex
+    align-items center
+  &__item
+    text-transform uppercase
+    font-size 16px
+    @media (max-width: 767px)
+      font-size 14px
+    &--large
+      font-size 48px
+      font-family var(--heading-font)
+      @media (max-width: 1023px)
+        font-size 28px
+      @media (max-width: 767px)
+        font-size 20px

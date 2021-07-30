@@ -1,0 +1,72 @@
+.sale-detail
+  &__top
+    display flex
+    justify-content space-between
+    align-items center
+  &__pagination
+    display flex
+    .pagination-arrow
+      position static
+    .pagination-counter
+      position static
+      width 90px
+      @media (max-width: 767px)
+        width 60px
+  &__content
+    margin-top 50px
+    display grid
+    grid-template-columns 1fr 2fr
+    @media (max-width: 1267px)
+      margin-top 30px
+    @media (max-width: 1023px)
+      display block
+  &__left
+    padding-right 150px
+    @media (max-width: 1267px)
+      padding-right 80px
+    @media (max-width: 1023px)
+      display flex
+      align-items center
+      margin-bottom 50px
+      padding-right 0
+    @media (max-width: 767px)
+      margin-bottom 30px
+    img
+      width 100%
+      height auto
+      @media (max-width: 1023px)
+        max-width 220px
+  &__contact
+    margin 50px auto 0
+    text-align center
+    max-width 240px
+    @media (max-width: 1023px)
+      margin 0 0 0 50px
+    @media (max-width: 767px)
+      max-width none
+      width 45%
+      margin-left 20px
+      flex-shrink 0
+    p
+      margin 0
+  &__right
+    padding 60px 100px
+    border 1px solid #C4C4C4
+    @media (max-width: 1267px)
+      padding 40px 50px
+    @media (max-width: 767px)
+      padding 30px 20px
+  &__date
+    color var(--gray3)
+  &__text
+    h2
+      font-size 26px
+      text-transform uppercase
+      font-family var(--text-font)
+      font-weight 500
+      margin 15px 0 40px
+      @media (max-width: 1267px)
+        margin-bottom 20px
+        font-size 22px
+      @media (max-width: 767px)
+        font-size 18px

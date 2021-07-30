@@ -1,0 +1,123 @@
+.torenters
+  &__items
+    display grid
+    grid-template-columns 1fr 1fr
+    @media (max-width: 767px)
+      display block
+  &__item
+    padding-right 200px
+    @media (max-width: 1680px)
+      padding-right 150px
+      .title1
+        font-size 28px
+    @media (max-width: 1267px)
+      padding-right 120px
+      .title1
+        font-size 24px
+        margin-bottom 30px
+      .text1
+        font-size 16px
+    @media (max-width: 1023px)
+      padding-right 80px
+    @media (max-width: 767px)
+      margin-bottom 70px
+      text-align center
+      padding-right 0
+      .title1
+        font-size 18px
+        margin-bottom 30px
+      .text1
+        font-size 14px
+        margin 10px 0
+    .btn
+      position relative
+      margin-top 50px
+      padding-right 50px
+      @media (max-width: 1267px)
+        margin-top 30px
+      &::after
+        content ''
+        position absolute
+        display block
+        top 22px
+        right 50px
+        display block
+        width 12px
+        height 12px
+        background url(../img/icons/down.svg) no-repeat center
+        transition .5s
+        @media (max-width: 1267px)
+          right 30px
+        @media (max-width: 767px)
+          top 17px
+      &:hover::after
+        @media (hover)
+          background url(../img/icons/down--white.svg) no-repeat center
+      &.active::after
+        transform rotate(180deg)
+  &__panel
+    display none
+    &.active
+      display block
+    h2
+      font-family var(--text-font)
+      font-size 24px
+      font-weight 400
+      margin 0
+      margin-bottom 30px
+      margin-top 50px
+    .btn
+      margin-top 30px
+      width 100%
+  &__columns
+    padding-bottom 50px
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-gap 70px
+    width 1000px
+    border-bottom 1px solid #E0E0E0
+    @media (max-width: 1267px)
+      width 100%
+    @media (max-width: 1023px)
+      grid-gap 30px
+    @media (max-width: 767px)
+      display block
+      padding-bottom 30px
+    &:last-of-type
+      padding-bottom 0
+      border-bottom none
+  &__input
+    display block
+    margin-bottom 30px
+    h3
+      font-size 18px
+      font-family var(--text-font)
+      font-weight 400
+      margin 0
+      margin-bottom 10px
+      line-height 1
+      height 22px
+    input
+    textarea
+      height 60px
+      width 100%
+      border: 3px solid var(--gray4)
+      padding 16px 20px
+      font-family var(--text-font)
+      font-size 16px
+      &:focus
+        border: 3px solid var(--gold)
+    textarea
+      height 120px
+  .reg-form__agree
+    margin 10px 0 20px
+    max-width 500px
+  &__right
+    margin-top 50px
+    padding-left 50%
+    @media (max-width: 767px)
+      padding-left 0
+    .torenters__input
+      width 500px
+      @media (max-width: 1267px)
+        width 100%

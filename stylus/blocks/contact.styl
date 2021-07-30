@@ -1,0 +1,192 @@
+textarea
+  resize vertical
+.contact
+  .title1
+    margin-bottom 50px
+    @media (max-width: 767px)
+      margin-bottom 30px
+  &__contacts
+    background var(--gray1)
+    padding 100px 0
+    margin-bottom 100px
+    @media (max-width: 1267px)
+      padding 70px 0
+      margin-bottom 70px
+    @media (max-width: 1023px)
+      margin-left -25px
+      margin-right -25px
+      padding 50px 25px
+      margin-bottom 50px
+    @media (max-width: 767px)
+      padding 16px
+      margin-left -16px
+      margin-right -16px
+    .container
+      display flex
+      justify-content space-between
+      @media (max-width: 767px)
+        display block
+  &__item
+    display flex
+    align-items flex-start
+    width 30%
+    @media (max-width: 1023px)
+      width auto
+      min-width 27%
+    @media (max-width: 767px)
+      width 100%
+      margin 20px 0
+    .icon
+      flex-shrink 0
+      margin-right 20px
+      @media (max-width: 1267px)
+        margin-right 15px
+      @media (max-width: 1023px)
+        margin-right 10px
+        margin-top 3px
+      svg
+        height 50px
+        width auto
+        @media (max-width: 1680px)
+          height 40px
+        @media (max-width: 1267px)
+          height 30px
+        @media (max-width: 1023px)
+          height 20px
+    .title1
+      margin-bottom 25px
+      @media (max-width: 1680px)
+        font-size 28px
+      @media (max-width: 1267px)
+        font-size 24px
+        margin-bottom 15px
+      @media (max-width: 1023px)
+        font-size 20px
+    .text1
+      margin 0
+      max-width 300px
+      @media (max-width: 1267px)
+        font-size 16px
+      @media (max-width: 1023px)
+        font-size 14px
+      a
+        text-decoration none
+        color inherit
+  &__switcher
+    margin-bottom 70px
+    @media (max-width: 1023px)
+      margin-bottom 50px
+    @media (max-width: 767px)
+      margin-bottom 30px
+    .btn
+      margin-right 60px
+      @media (max-width: 767px)
+        margin-right 0
+        width 100%
+        margin-bottom 20px
+        &:last-child
+          margin 0
+        .title2
+          font-size 14px !important
+      &:hover
+      &.active
+        background inherit
+        color inherit
+        border 1px solid var(--gold)
+      &.active
+        background var(--gold)
+        color var(--white)
+  &__content
+    display none
+    .btn
+      margin-top 50px
+      @media (max-width: 767px)
+        margin-top 30px
+    &.active
+      display block
+    h3
+      font-family var(--text-font)
+      font-size 24px
+      margin 30px 0 20px
+      font-weight 500
+      &:first-child
+        margin-top 0
+      @media (max-width: 1023px)
+        font-size 18px
+        margin 20px 0 15px
+    p
+      margin 0 0 10px
+  &__form
+    width 450px
+    background var(--white)
+    position absolute
+    right calc(50vw - 760px - (var(--scrollbar-width) / 2)) !important
+    top 40px
+    padding 40px 30px
+    @media (max-width: 1680px)
+      width 390px
+      right calc(50vw - 550px - (var(--scrollbar-width) / 2)) !important
+    @media (max-width: 1267px)
+      top 20px
+      right calc(50vw - 488px - (var(--scrollbar-width) / 2)) !important
+      width 350px
+      padding 30px 20px
+    @media (max-width: 1023px)
+      right 25px !important
+      width 300px
+      top 15px
+    @media (max-width: 767px)
+      position static
+      width 100%
+      padding 30px 16px
+    .title2
+      margin-bottom 30px
+    .reg-form__input
+      width 100%
+      margin-right 0
+      margin-left 0
+      textarea
+        width 100%
+        height 200px
+        border 3px solid var(--gray3)
+        padding: 19px 17px 20px
+        font-size inherit
+        font-family inherit
+        font-weight inherit
+        border-radius 0
+        &:focus
+          border 3px solid var(--gold)
+  &__map
+    position relative
+    margin-top 80px
+    @media (max-width: 1023px)
+      margin-left -25px
+      margin-right -25px
+      margin-top 70px
+    @media (max-width: 767px)
+      margin-top 50px
+    #map
+      height 745px
+      @media (max-width: 1267px)
+        height 680px
+      @media (max-width: 1023px)
+        height 625px
+      @media (max-width: 767px)
+        height 400px
+    .ymaps-2-1-77-controls__control
+      left calc(50vw - 760px - (var(--scrollbar-width) / 2)) !important
+      @media (max-width: 1680px)
+        left calc(50vw - 550px - (var(--scrollbar-width) / 2)) !important
+      @media (max-width: 1267px)
+        left calc(50vw - 488px - (var(--scrollbar-width) / 2)) !important
+      @media (max-width: 1023px)
+        left 25px !important
+    .ymaps-2-1-77-control-popup__content
+      width 270px !important
+    .ymaps-2-1-77-route-panel__errors2
+    .ymaps-2-1-77-copyrights-pane
+    .ymaps-2-1-77-controls__control:last-of-type
+      display none
+    &.route
+      .ymaps-2-1-77-controls__control:last-of-type
+        display block

@@ -1,0 +1,95 @@
+.catalog-carousel
+  background var(--gray1)
+  .title1
+    margin 0
+    max-width 400px
+    @media (max-width: 1023px)
+      max-width 40%
+    @media (max-width: 767px)
+      max-width 50%
+  &__heading
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 100px
+    @media (max-width: 1680px)
+      margin-bottom 70px
+    @media (max-width: 1023px)
+      margin-bottom 50px
+    @media (max-width: 767px)
+      margin-bottom 30px
+    div
+      width 350px
+      @media (max-width: 1267px)
+        text-align right
+      @media (max-width: 767px)
+        max-width 45%
+      a
+        color var(--red)
+        transition .5s
+        &:hover
+          @media (hover)
+            opacity .5
+        @media (max-width: 1680px)
+          display inline-block
+          margin-left: 80px;
+        @media (max-width: 767px)
+          margin-left 0
+  &__carousel
+    margin-top 0
+    width calc(100% + 90px)
+    position relative
+    @media (max-width: 1267px)
+      width calc(100% + 190px)
+    @media (max-width: 1023px)
+      width 95%
+    @media (max-width: 767px)
+      width 60%
+    .slick-list
+      &::before
+        content ''
+        display block
+        position absolute
+        z-index 2
+        left 15px
+        top -20px
+        height calc(100% + 140px)
+        width calc(50vw  - (var(--scrollbar-width) / 2))
+        background var(--gray1)
+        transform translateX(-100%)
+        @media (max-width: 1267px)
+          height calc(100% + 40px)
+        @media (max-width: 1023px)
+          left 0
+      &:hover::before
+        @media (hover)
+          left -15px
+      &.dragging
+        left 30px
+  .slick-arrow
+    top -150px
+    left 450px
+    @media (max-width: 1680px)
+      top -110px
+    @media (max-width: 1267px)
+      top -105px
+    @media (max-width: 1023px)
+      left 45%
+      top -80px
+    @media (max-width: 767px)
+      display none !important
+    &.slick-next
+      left 530px
+      @media (max-width: 1267px)
+        left 505px
+      @media (max-width: 1023px)
+        left calc(45% + 50px)
+  .slick-slide
+    margin 0 15px
+    @media (max-width: 1023px)
+      margin 0 7px
+  .slick-list
+    margin 0 -15px
+    overflow visible
+    @media (max-width: 1023px)
+      margin 0 -7px

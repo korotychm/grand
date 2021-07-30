@@ -1,0 +1,119 @@
+.home-links
+  display: grid
+  grid-template-columns 1fr 1fr 1fr
+  @media (max-width: 767px)
+    display block
+  &__col
+    display block
+    overflow-x hidden
+    position relative
+    background-size cover
+    transition opacity .5s
+    &::before
+      content ''
+      display: block
+      padding-bottom 150%
+      background #35342C
+      opacity .4
+    &:hover
+      @media (hover)
+        opacity .95
+      .home-links__heading::before
+        transform translateX(0) !important
+    &--grand
+      background-image url(../img/grand.jpg)
+      .home-links__heading::before
+        background var(--grand)
+    &--yug
+      background-image url(../img/grand-yug.jpg)
+      .home-links__heading::before
+        background var(--youg)
+    &--rai
+      background-image url(../img/el-rai.jpg)
+      .home-links__heading::before
+        background var(--elrai)
+  &__tc
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%,-50%)
+    color var(--white)
+    width auto
+    @media (max-width: 767px)
+      transform translateY(-50%)
+      left 75px
+  &__heading
+    display inline-block
+    position relative
+    font-size 45px
+    font-weight 300
+    text-transform uppercase
+    margin 0
+    white-space: nowrap
+    margin-bottom 15px
+    @media (max-width: 1680px)
+      font-size 24px
+      margin-bottom 10px
+      @media (max-width: 1023px)
+        font-size 18px
+      @media (max-width: 767px)
+        font-size 24px
+        margin-bottom 20px
+    span
+      position relative
+    &::before
+      content ''
+      display block
+      position absolute
+      width calc(33.33vw - (var(--scrollbar-width) / 3))
+      height calc(100% + 14px)
+      right -10px
+      top -7px
+      transform translateX(-100%)
+      transition 1s
+      @media (max-width: 1023px)
+        transform translateX(0)
+      @media (max-width: 767px)
+        width calc(100vw - var(--scrollbar-width))
+    &::after
+      @media (max-width: 1023px)
+          content ''
+          display block
+          height 18px
+          width 9px
+          background url(../img/icons/arrow--white.svg) no-repeat center
+          background-size contain
+          position absolute
+          top 1px
+          right -30px
+          transform rotate(180deg)
+      @media (max-width: 767px)
+        top 5px
+  &__address
+    display flex
+    align-items flex-start
+    color var(--white)
+    height 48px
+    .icon
+      width 14px
+      margin-right 10px
+      margin-top 5px
+      @media (max-width: 767px)
+        width 16px
+      svg
+        width 100%
+        height auto
+    span
+      display block
+      white-space nowrap
+      margin 0
+      max-width 270px
+      position relative
+      @media (max-width: 1680px)
+        font-size 16px
+        height 38px
+      @media (max-width: 1023px)
+        font-size 14px
+        padding-top 5px
+      @media (max-width: 767px)
+        font-size 18px

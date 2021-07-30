@@ -1,0 +1,96 @@
+.school-reg
+  .container
+    position relative
+    padding-right 320px
+    @media (max-width: 1267px)
+      padding-right 0
+  &__img
+    position absolute
+    right 0
+    top 50%
+    transform translateY(-50%)
+    width 45%
+    @media (max-width: 1267px)
+      right 30px
+      width 50%
+      top 41%
+    @media (max-width: 1023px)
+      width 45%
+      top 250px
+    @media (max-width: 767px)
+      display none
+    img
+      width 100%
+  &__form
+    padding 70px 440px 120px 50px
+    border 1px solid #C4C4C4
+    @media (max-width: 1680px)
+      padding 50px 230px 100px 50px
+    @media (max-width: 1267px)
+      padding 70px 30px
+      .reg-form
+        display block
+        max-width 42%
+        position relative
+        &__input
+          display block
+          margin 0
+          margin-bottom 20px
+          width 100%
+        &__radios
+          justify-content space-between
+        &__radio
+          margin 0
+        &__agree
+          width 250%
+          .check
+            top 1px
+      @media (max-width: 1023px)
+        .reg-form
+          max-width 48%
+          &__radio
+            padding-top 3px
+            font-size 16px
+          &__agree
+            width 200%
+      @media (max-width: 767px)
+        padding 50px 16px
+        .reg-form
+          max-width 100%
+          &__agree
+            width 100%
+          &__radios
+            justify-content flex-start
+          &__radio
+            margin-right 30px
+
+    h2
+      margin-bottom 50px
+      @media (max-width: 1267px)
+        font-size 42px
+        margin-bottom 20px
+      @media (max-width: 1023px)
+        font-size 24px
+      @media (max-width: 767px)
+        font-size 18px
+        margin-bottom 30px
+    .btn
+      width: calc(50% - 10px);
+      margin-right 20px
+      margin-bottom 0
+      @media (max-width: 1680px)
+        margin-right 0
+        width 100%
+        margin-bottom 20px
+      &:last-child
+        margin-right 0
+        margin-bottom 0
+        @media (max-width: 1267px)
+          position absolute
+          margin-left 40px
+          margin-bottom 0
+        @media (max-width: 1023px)
+          margin-left 20px
+        @media (max-width: 767px)
+          position static
+          margin-left 0

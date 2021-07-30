@@ -1,0 +1,23 @@
+.news-sales
+  padding-bottom 100px
+  @media (max-width: 1267px)
+    padding-bottom 70px
+  @media (max-width: 1023px)
+    padding-bottom 50px
+  &__grid
+    margin-top 60px
+    display grid
+    grid-template-columns 1fr 1fr 1fr
+    grid-gap 60px
+    @media (max-width: 1267px)
+      grid-gap 30px
+      margin-top 50px
+    @media (max-width: 1023px)
+      margin-top 30px
+    @media (max-width: 767px)
+      grid-template-columns 1fr 1fr
+      grid-gap 20px
+  &__more-btn
+    margin-top 60px
+    display flex
+    justify-content center

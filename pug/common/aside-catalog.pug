@@ -1,0 +1,15 @@
+- var categories = ["Диваны и кресла","Кровати","Матрасы","Шкафы и стеллажи","Комоды и тумбы","Столы","Стулья","Кухонная мебель","Офисная мебель","Детская мебель","Ковры","Мебель для ванной","Товары для дома","Электроника","Бытовая техника","Компьютерная техника","Свет"]
+
+mixin nav-category(name,...subcategories)
+  li.toggle-category
+    div.text1= name
+    ul.aside-catalog__subcategories
+      each sub in subcategories
+        li.text1
+          a(href="/catalog.html")= sub
+          
+nav.aside-catalog
+  ul.aside-catalog__categories
+    for cat in categories
+      +nav-category(cat,"Все диваны", "Угловые диваны", "Модульные диваны", "Прямые диваны")
+  button.aside-catalog__toggle

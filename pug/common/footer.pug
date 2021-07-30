@@ -1,0 +1,107 @@
+section.subscribe.subscribe--border
+  div.container
+    div.subscribe__left
+      p Подпишись на нашу рассылку и будь в курсе последних новостей!
+    div.subscribe__right
+      form(id="subscribe-form",action="")
+        input(type="email",placeholder="Ваш e-mail")
+        button.btn.btn--gold Подписаться
+        label.subscribe__agree Я согласен на обработку моих персональных данных на условиях, определенных <a href="">Политикой конфиденциальности</a>
+          input(type="checkbox").hidden
+          div.check
+div.popup.popup--subscribe-success
+  div.popup__inner
+    div.popup__close
+    div.success-content
+      h3.title2 Благодарим Вас за подписку
+      p Мы отправили письмо на Вашу электронную почту. Пожалуйста, подтвердите подписку по ссылке внутри письма.
+footer.footer
+  div.container
+    div.footer__heading
+      h2 Наши ТЦ
+    div.footer__tc
+      a(href="/grand.html") Гранд
+      a(href="/grand-yug.html") Гранд Юг
+      a(href="/el-rai.html") Электронный Рай
+    div.footer__links
+      a(href="torenters.html").link Арендаторам
+    div.footer__contact тел: +7 (495) 780-33-33 / +7 (495) 780-33-00
+    div.footer__contact Мы работаем с 10:00 до 21:00 без перерыва и выходных
+    div.footer__social
+      a(href="").text2 Instagram
+      a(href="").text2 Facebook
+      a(href="").text2 Vk
+div.copyright
+  div.container
+    div.text3 © 2020, МТК ГРАНД. Все права защищены
+    a(href="") Политика конфиденциальности
+    
+div.popup.popup--login
+  div.popup__inner
+    div.popup__close
+    div.auth-form.auth-form--auth.active
+      div.title2 Войти
+      form(id="",action="/personal.html").reg-form
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span Логин<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="password", name="")
+          span Пароль<sup>*</sup>
+        div.reg-form__social
+          a.link facebook
+          a.link vk
+          a.link яндекс
+          a.link google
+        div.reg-form__btns
+          button.btn.btn--gold Войти
+          a(data-form=".auth-form--reg").btn.auth-switch Зарегистрироваться
+        div.reg-form__bottom
+          div.reg-form__rememberme
+            input(type="checkbox",id="rememberme").hidden
+            label(for="rememberme")
+              div.check
+              span Оставаться в системе
+          a(data-form=".auth-form--forgot").link.auth-switch Забыли пароль?
+    div.auth-form.auth-form--reg
+      div.title2 Зарегистрироваться
+      form(id="reg-form", action="").reg-form
+        label.reg-form__input.text2
+          input(type="text", name="")
+          span Имя<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="text", name="")
+          span Фамилия
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span Email<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="text", name="").phoneinput
+          span Телефон
+        label.reg-form__input.text2
+          input(type="password", name="")
+          span Пароль<sup>*</sup>
+        button.btn.btn--gold Зарегистрироваться
+        a(data-form=".auth-form--auth").link.auth-switch Войти
+        label.reg-form__agree Я согласен на обработку моих персональных данных на условиях, определенных <a href="">Политикой конфиденциальности</a>
+          input(type="checkbox",name="",value="").hidden
+          div.check
+        label.reg-form__agree Я соглашаюсь с <a href="">Правилами Программы</a>. Я хочу получать рекламную информацию о продуктах и промоакциях компании. Я в любой момент могу отписаться от рассылки.
+          input(type="checkbox",name="",value="").hidden
+          div.check
+    div.auth-form.auth-form--forgot
+      div.title2 Забыли пароль?
+      form(id="",action="").reg-form
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span E-mail<sup>*</sup>
+        button.btn.btn--gold Выслать ссылку
+        a(data-form=".auth-form--auth").link.auth-switch Вспомнили пароль?
+        
+div.popup.popup--reg-success
+  div.popup__inner
+    div.popup__close
+    div.success-content
+      h3.title2 Благодарим Вас за регистрацию
+      p В Личном кабинете Вы найдете сохраненные в Избранном товары, информацию о подписках и программах лояльности
+      a(href="/personal.html").btn В личный кабинет

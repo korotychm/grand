@@ -1,0 +1,33 @@
+include ../mixins/news-carousel-item.pug          
+          
+section.section.news-sales
+  div.container
+    h2.title2.news-sales__switcher
+      span(data-btn="Все новости", data-href="") Новости
+      i.slash
+      span(data-btn="Все акции", data-href="").active Акции
+    div.news-sales__content.active
+      div.news-sales__grid
+        +news-carousel-item("Акция -25% на мебель из наличия продлевается до 5 апреля","/img/demo/news1.jpg")
+        +news-carousel-item("Мобильный шоу-рум","/img/demo/news2.jpg")
+        +news-carousel-item('Скидки на модели "Dream Catchers" до 40%',"/img/demo/news3.jpg")
+        +news-carousel-item("Акция до 50% на диваны BELFAN!","/img/demo/news4.jpg")
+        +news-carousel-item("В салоне Zodiac -25% на всё!","/img/demo/news5.jpg")
+        +news-carousel-item("МЫ СНОВА ВМЕСТЕ: Grazie Italia!","/img/demo/news6.jpg")
+    div.news-sales__content
+      div.news-sales__grid
+        +news-carousel-item("Акция до 50% на диваны BELFAN!","/img/demo/news4.jpg")
+        +news-carousel-item("В салоне Zodiac -25% на всё!","/img/demo/news5.jpg")
+        +news-carousel-item("МЫ СНОВА ВМЕСТЕ: Grazie Italia!","/img/demo/news6.jpg")
+        +news-carousel-item("Акция -25% на мебель из наличия продлевается до 5 апреля","/img/demo/news1.jpg")
+        +news-carousel-item("Мобильный шоу-рум","/img/demo/news2.jpg")
+        +news-carousel-item('Скидки на модели "Dream Catchers" до 40%',"/img/demo/news3.jpg")
+    div.news-sales__more-btn
+      button.btn Еще новости
+      
+          
+          
+    
+      
+        
+    

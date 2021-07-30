@@ -1,0 +1,31 @@
+- var page_title = "Каталог"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo-grand--black.svg"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.grand
+    include common/header2.pug
+    main.main
+      div.container
+        section.page-head.page-head--catalog
+          include mixins/page-top.pug
+          +page-top("/img/demo/catalog-head.jpg","Диваны и кресла","Широкий выбор мягкой мебели представлен в нашем каталоге товаров, где можно найти и купить диваны и кресла высокого качества по доступным ценам.")
+          nav.page-head__nav
+            a(href="#shops").title2.anchor Магазины
+            a(href="#interior").title2.anchor Диваны в интерьере
+            a(href="#sales").title2.anchor Акции
+            a(href="#blog").title2.anchor Блог
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Каталог товаров")
+      include blocks/catalog.pug
+      include blocks/home-shops.pug
+      include blocks/home-interior.pug
+      include blocks/home-blog.pug
+      include blocks/news-sales-carousel.pug
+      include blocks/privilege-form.pug
+      include blocks/video-review.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

@@ -1,0 +1,17 @@
+- var page_title = "Блог детально"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo.svg"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.all
+    include common/header2.pug
+    main.main
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Блог")
+      include blocks/blog-detail.pug
+      include blocks/advertisement.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

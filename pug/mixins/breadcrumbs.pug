@@ -1,0 +1,10 @@
+mixin breadcrumbs(...links)
+  div.breadcrumbs.container
+    ul
+      li.breadcrumbs__back
+        a(href="")
+          img(src="/img/icons/back.svg")
+      each link in links
+        li.text2.breadcrumbs__link
+          a(href="")= link
+      

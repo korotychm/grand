@@ -1,0 +1,34 @@
+section.section.school-reg
+  div.container
+    img(src="/img/school-reg.jpg").school-reg__img
+    div.school-reg__form
+      h2.title2 Регистрация
+      form(id="", action="").reg-form
+        label.reg-form__input.text2
+          input(type="text", name="")
+          span Имя<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="text", name="")
+          span Фамилия
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span Email<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="text", name="").phoneinput
+          span Телефон
+        div.reg-form__radios
+          label.reg-form__radio Гранд Химки
+            input(type="radio",name="radio",checked).hidden
+            div.radio
+          label.reg-form__radio Гранд Юг
+            input(type="radio",name="radio").hidden
+            div.radio
+        label.reg-form__agree Я согласен на обработку моих персональных данных на условиях, определенных <a href="">Политикой конфиденциальности</a>
+          input(type="checkbox",name="",value="").hidden
+          div.check
+        button.btn.btn--gold Зарегистрироваться
+        button.btn Уже зарегистрирован
+          
+          
+          
+            

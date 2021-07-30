@@ -1,0 +1,16 @@
+- var page_title = "Поиск по сайту"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo.svg"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.all
+    include common/header2.pug
+    main.main
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Поиск по сайту")
+      include blocks/search.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

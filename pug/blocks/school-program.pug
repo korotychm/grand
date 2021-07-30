@@ -1,0 +1,120 @@
+mixin program-item(time,minutes,text,img)
+  div.school-program__item
+    div.school-program__time
+      h5= time
+      p.text1= minutes
+    div.school-program__text
+      p= text
+    div.school-program__img
+      img(src=img)
+section.section.section--nopt.section--nopb.school-program
+  div.container
+    h2.title1 Программа
+    div.school-program__switcher
+      div.active
+        h3.title2 МТК «Гранд»
+        p.text1 Химки, ул.Бутаково, 4, Ленинградское ш., 100 метров от МКАД
+      div
+        h3.title2 ТЦ «Гранд Юг»
+        p.text1 Москва, м.Пражская, ул. Кировоградская, д.15
+    div.school-program__wrapper
+      div.school-program__top
+        div.tags
+          a.active 20 сентября
+          a 21 сентября
+          a 22 сентября
+          a 23 сентября
+        a.link.school-program__all Смотреть всю программу
+      div.school-program__panel.active
+        div.school-program__day.active#day1
+          div.school-program__left
+            div
+              h4 20 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 21 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 22 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 23 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+      
+      div.school-program__panel
+        div.school-program__day.active
+          div.school-program__left
+            div
+              h4 20 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 21 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 22 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+        div.school-program__day
+          div.school-program__left
+            div
+              h4 23 сентября
+              button.btn Зарегистрироваться
+          div.school-program__right
+            +program-item("12:00","60 минут","Получение квартиры от застройщика. На что обратить внимание при подписании акта приема-передачи ключей.","/img/demo/program1.jpg")
+            +program-item("13:00","15 минут","МИР: презентация компании","/img/demo/program2.jpg")
+            +program-item("13:30","60 минут","Ремонт новостройки: что предстоит и сколько стоит?","/img/demo/program3.jpg")
+            +program-item("15:00","15 минут","ZODIAK: эргономика и организация пространства","/img/demo/program4.jpg")
+            +program-item("15:30","60 минут","Перепланировка квартир. Что можно, что нельзя и как согласовать перепланировку?","/img/demo/program5.jpg")
+            
+          

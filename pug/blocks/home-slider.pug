@@ -1,0 +1,28 @@
+include ../mixins/page-top.pug
+
+section.home-slider
+  div.home-slider__slider
+    +page-top("/img/demo/grand-head.jpg","Крупный заголовок акции","Подзаголовок акции в одну или две строки, соблюдайте кол-во знаков")
+    +page-top("/img/demo/el-head.jpg","Крупный заголовок акции","Подзаголовок акции в одну или две строки, соблюдайте кол-во знаков")
+    +page-top("/img/demo/yug-head.jpg","Крупный заголовок акции","Подзаголовок акции в одну или две строки, соблюдайте кол-во знаков")
+  div.home-slider__social
+    a(href="").text2 Instagram
+    a(href="").text2 Facebook
+    a(href="").text2 Vk
+  div.home-slider__contact
+    a(href="/contact.html")
+      div.icon
+        include ../../img/icons/clock.svg
+      div.text2 10:00 - 22:00
+    a(href="tel:74952522525") 
+      div.icon
+        include ../../img/icons/phone.svg
+      div.text2 +7 495 252-25-25
+    a(href="/contact.html")
+      div.icon
+        include ../../img/icons/location.svg
+      div.text2 г. Химки, ул. Бутаково, 4
+    a(href="")
+      div.icon
+        include ../../img/icons/scheme.svg
+      div.text2 Схема центра

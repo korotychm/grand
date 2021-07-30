@@ -1,0 +1,149 @@
+mixin shop(name,img)
+  a(href="/shop-detail.html").shops__item
+    div.shops__img
+      img(src=img)
+    div.shops__text
+      h3= name
+      h4 Гранд / Гранд Юг
+      
+include ../mixins/news-carousel-item.pug 
+include ../mixins/blog-item.pug
+include ../mixins/interior-item.pug
+      
+section.section.search
+  div.container
+    h1.title1 Поиск по сайту
+    form(action="",id="").search__form
+      input(type="text",placeholder="Поиск",name="search").text2
+      button
+        include ../../img/icons/search.svg
+    p.text1.search__results Найдено 90 результатов
+    div.search__switcher
+      div.tags.tags--mobile-select.toggle-active
+        a.active Товары
+        a Магазины
+        a Новости и акции
+        a Блог
+        a Интерьерные решения
+        a Гранд Привилегия
+        a Школа новосёла
+        
+    div.search__panel.active
+      div.search__panel-top
+        h2.title1 Товары
+        p.text1 12 результатов
+      div.tags__trigger.toggle-active
+        div.text2 Категории
+      div.tags.tags--mobile-select.toggle-active
+        a.active Все категории
+        a Диваны и кресла
+        a Кровати
+        a Шкафы и стеллажи
+      include catalog-block.pug
+      
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Магазины
+        p.text1 30 результатов
+      div.tags.tags--mobile-list
+        a.active Все категории
+        a Диваны и кресла
+        a Кровати
+        a Шкафы и стеллажи
+      div.shops__list.shops__list--list
+        h2 А
+        div.shops__grid
+          +shop("Абитарэ Иентерьер","/img/demo/shop1.png")
+          +shop("Аллегро Классика","/img/demo/shop2.png")
+          +shop("Антик Европа","/img/demo/shop3.png")
+          +shop("Артис","/img/demo/shop4.png")
+          +shop("Ангстрем","/img/demo/shop5.png")
+          +shop("Артеко","/img/demo/shop6.png")
+          +shop("Анонс","/img/demo/shop7.png")
+      div.shops__list.shops__list--list#letter-2
+        h2 Б
+        div.shops__grid
+          +shop("Бастион-С","/img/demo/shop8.png")
+          +shop("Бентли Трейд","/img/demo/shop9.png")
+          +shop("Берлиоз","/img/demo/shop10.png")
+          +shop("Брянский лес","/img/demo/shop11.png")
+          
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Новости и акции
+        p.text1 20 результатов
+      div.news-sales__grid
+        +news-carousel-item("Акция -25% на мебель из наличия продлевается до 5 апреля","/img/demo/news1.jpg")
+        +news-carousel-item("Мобильный шоу-рум","/img/demo/news2.jpg")
+        +news-carousel-item('Скидки на модели "Dream Catchers" до 40%',"/img/demo/news3.jpg")
+        +news-carousel-item("Акция до 50% на диваны BELFAN!","/img/demo/news4.jpg")
+        +news-carousel-item("В салоне Zodiac -25% на всё!","/img/demo/news5.jpg")
+        +news-carousel-item("МЫ СНОВА ВМЕСТЕ: Grazie Italia!","/img/demo/news6.jpg")
+      div.news-sales__more-btn
+        button.btn Еще новости
+        
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Блог
+        p.text1 20 результатов
+      div.blog-page
+        div.blog__grid
+          +blog-item("Подборки","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog1.jpg")
+          +blog-item("Полезно знать","Интерьер для аристократов","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog2.jpg")
+          +blog-item("Гид по стилю","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog3.jpg")
+          +blog-item("Подборки","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog1.jpg")
+          +blog-item("Полезно знать","Интерьер для аристократов","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog2.jpg")
+          +blog-item("Гид по стилю","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog3.jpg")
+          +blog-item("Подборки","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog1.jpg")
+          +blog-item("Полезно знать","Интерьер для аристократов","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog2.jpg")
+          +blog-item("Гид по стилю","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog3.jpg")
+          +blog-item("Подборки","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog1.jpg")
+          +blog-item("Полезно знать","Интерьер для аристократов","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog2.jpg")
+          +blog-item("Гид по стилю","Выбираем красивые и качественные обои","Узнайте, как сделать ваш дом умиротворяющим и уютным.","/img/demo/home-blog3.jpg")
+        div.blog__more-btn
+          button.btn Еще статьи
+    
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Интерьерные решения
+        p.text1 3 результата
+      div.interior__item
+        +interior-item()
+        p Небольшое описание картинки на одну или две строчки
+      div.interior__item
+        +interior-item()
+        p Небольшое описание картинки на одну или две строчки
+      div.interior__item
+        +interior-item()
+        p Небольшое описание картинки на одну или две строчки
+  
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Гранд привилегия
+        p.text1 20 результатов
+      div.news-sales__grid
+        +news-carousel-item("Акция -25% на мебель из наличия продлевается до 5 апреля","/img/demo/news1.jpg")
+        +news-carousel-item("Мобильный шоу-рум","/img/demo/news2.jpg")
+        +news-carousel-item('Скидки на модели "Dream Catchers" до 40%',"/img/demo/news3.jpg")
+        +news-carousel-item("Акция до 50% на диваны BELFAN!","/img/demo/news4.jpg")
+        +news-carousel-item("В салоне Zodiac -25% на всё!","/img/demo/news5.jpg")
+        +news-carousel-item("МЫ СНОВА ВМЕСТЕ: Grazie Italia!","/img/demo/news6.jpg")
+      div.news-sales__more-btn
+        button.btn Еще акции
+
+    div.search__panel
+      div.search__panel-top
+        h2.title1 Школа новосёла
+        p.text1 20 результатов
+      div.news-sales__grid
+        +news-carousel-item("Акция -25% на мебель из наличия продлевается до 5 апреля","/img/demo/news1.jpg")
+        +news-carousel-item("Мобильный шоу-рум","/img/demo/news2.jpg")
+        +news-carousel-item('Скидки на модели "Dream Catchers" до 40%',"/img/demo/news3.jpg")
+        +news-carousel-item("Акция до 50% на диваны BELFAN!","/img/demo/news4.jpg")
+        +news-carousel-item("В салоне Zodiac -25% на всё!","/img/demo/news5.jpg")
+        +news-carousel-item("МЫ СНОВА ВМЕСТЕ: Grazie Italia!","/img/demo/news6.jpg")
+      div.news-sales__more-btn
+        button.btn Еще акции
+      
+      
+      

@@ -1,0 +1,26 @@
+include ../mixins/video-review.pug
+        
+.section.section--nopt.video-review
+  .container
+    .video-review__heading
+      h2.title1 Видеообзоры
+      div
+        a(href="").link Смотреть все видео
+    div.video-review__slider
+      div.slick
+        div.video-review__slide
+          +video-review("Ремонт новостройки:","Что предстоит и сколько стоит","/img/demo/video-review1.jpg")
+          +video-review("Эргономика и организация пространства","Покажем на примерах самые неочевидные решения","/img/demo/video-review2.jpg")
+          +video-review("Редизайн и редекор интерьера","Как быстро изменить ваш интерьер","/img/demo/video-review3.jpg")
+          +video-review("Освещение в интерьере","Как правильно спланировать и что учесть при выборе светильников","/img/demo/video-review4.jpg")
+        div.video-review__slide
+          +video-review("Ремонт новостройки:","Что предстоит и сколько стоит","/img/demo/video-review1.jpg")
+          +video-review("Эргономика и организация пространства","Покажем на примерах самые неочевидные решения","/img/demo/video-review2.jpg")
+          +video-review("Редизайн и редекор интерьера","Как быстро изменить ваш интерьер","/img/demo/video-review3.jpg")
+          +video-review("Освещение в интерьере","Как правильно спланировать и что учесть при выборе светильников","/img/demo/video-review4.jpg")
+        div.video-review__slide
+          +video-review("Ремонт новостройки:","Что предстоит и сколько стоит","/img/demo/video-review1.jpg")
+          +video-review("Эргономика и организация пространства","Покажем на примерах самые неочевидные решения","/img/demo/video-review2.jpg")
+          +video-review("Редизайн и редекор интерьера","Как быстро изменить ваш интерьер","/img/demo/video-review3.jpg")
+          +video-review("Освещение в интерьере","Как правильно спланировать и что учесть при выборе светильников","/img/demo/video-review4.jpg")
+        

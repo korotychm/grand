@@ -1,0 +1,9 @@
+mixin video-review(title,subtitle,poster)
+  div.video-review__item
+    video(controls)
+      source(src="/img/demo/video.mp4", type="video/mp4")
+    div(style="background-image: url("+poster+")").video-review__overlay
+      div
+        h3= title
+        p= subtitle
+      button.video-review__button

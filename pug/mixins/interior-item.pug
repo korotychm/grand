@@ -1,0 +1,11 @@
+mixin interior-item()
+  div.interior__item
+    img(src="/img/demo/home-interior.jpg")
+    h3 Товары на фото
+    div.interior__dots
+      div(style="left: 72%; top: 44%;",data-id="").interior__dot
+        +catalog-item("Neopoliscasa","Торшер Casa dei sogni","/img/demo/item1.jpg")
+      div(style="left: 55%; top: 72%;",data-id="").interior__dot
+        +catalog-item("Neopoliscasa","Торшер Casa dei sogni","/img/demo/item1.jpg")
+      div(style="left: 17%; top: 72%;",data-id="").interior__dot
+        +catalog-item("Neopoliscasa","Торшер Casa dei sogni","/img/demo/item1.jpg")

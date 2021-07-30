@@ -1,0 +1,74 @@
+section.section.contact
+  div.container
+    h2.title1 Как добраться
+  div.contact__contacts
+    div.container
+      div.contact__item
+        div.icon
+          include ../../img/icons/location.svg
+        div
+          h3.title1 Адрес
+          p.text1 Московская область, г.Химки,<br>ул.Бутаково, дом 4
+      div.contact__item
+        div.icon
+          include ../../img/icons/phone.svg
+        div
+          h3.title1 Телефоны
+          p.text1
+            a(href="tel:74957803333") +7 (495) 780-33-33
+          p.text1
+            a(href="tel:74957803300") +7 (495) 780-33-00
+      div.contact__item
+        div.icon
+          include ../../img/icons/clock.svg
+        div
+          h3.title1 Режим работы
+          p.text1 Мы работаем с 10:00 до 21:00<br>без перерыва и выходных.
+  div.container
+    div.contact__switcher
+      button.btn.active
+        span.title2 На машине
+      button.btn
+        span.title2 На общественном транспорте
+    div.contact__content.active
+      p.text1 МТК «Гранд» расположен с левой стороны Ленинградского шоссе при <br>движении в область, в 100 метрах от МКАД.
+      a(href="#map",data-type="auto").btn.btn--route.anchor Построить маршрут
+    div.contact__content
+      h3 от станции метро «Речной вокзал» до остановки «Бутаково»:
+      p.text1 автобусы: №342, 370, 443, 482, 851
+      p.text1 маршрутные такси: №342, 443, 532, 662, 949, 986
+      h3 от станции метро «Войковская» до остановки «Бутаково»:
+      p.text1 автобусы: № 440, 440П, 465
+      h3 от станции метро «Планерная» до остановки «Бутаково»:
+      p.text1 автобусы: №817, 865 маршрутное такси: №154, 948
+      h3 от платформы Химки Октябрьской железной дороги:
+      p.text1 автобусы: №1, 3, 26, 27, 28 до остановкия «Юбилейный проспект»
+      p.text1 №5 — до остановки «Бутаково»
+      p.text1 маршрутные такси: №19, 51, 3 до остановки «Юбилейный проспект»
+      h3 из г. Зеленоград до остановки «Бутаково»:
+      p.text1 автобус-экспресс «Зеленоград — Речной вокзал» (остановка по требованию)
+      p.text1 автобус №431 (от платформы Крюково), №400 (от магазина «Океан»)
+      p.text1 маршрутное такси: № 400, 476.
+      h3 от платформы Долгопрудная Московской железной дороги:
+      p.text1 автобус №32 — до остановки «Бутаково»
+      a(href="#map",data-type="masstransit").btn.btn--route.anchor Построить маршрут
+      
+  div.contact__map
+    <script>var address = 'Химки, ул.Бутаково, 4';</script>
+    div#map
+    div.contact__form
+      h2.title2 Обратная связь
+      form(id="",action="").reg-form
+        label.reg-form__input.text2
+          input(type="text",name="",placeholder="Имя")
+        label.reg-form__input.text2
+          input(type="text",name="",placeholder="Email")
+        label.reg-form__input.text2
+          input(type="text",name="",placeholder="Телефон").phoneinput
+        label.reg-form__input.text2
+          textarea(name="",placeholder="Сообщение")
+        button.btn.btn--gold Отправить
+        
+  
+        
+  

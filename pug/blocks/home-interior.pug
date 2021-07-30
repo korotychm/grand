@@ -1,0 +1,17 @@
+include ../mixins/catalog-item.pug
+include ../mixins/interior-item.pug
+         
+section.section.section--nopb.home-interior
+  div.container
+    div.section-top
+      h2.title1 Интерьерные решения
+      div.section-top__info
+        p.text2 Специально для вас мы сделали подборку уже готовых решений, которые вы можете использовать в своей переделке.
+        a(href="/interior.html").link Смотреть все решения
+    div.home-interior__slider
+      div.slick
+        +interior-item()
+        +interior-item()
+        +interior-item()
+    
+    

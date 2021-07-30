@@ -1,0 +1,28 @@
+mixin catalog-item(brand,name,item_img)
+  div.item
+    a(href="/shop-detail.html").item__brand= brand
+    a(href="/item-detail.html")
+      h3.item__title= name
+    a(href="/item-detail.html")
+      div(style="background-image: url("+item_img+")").item__img
+    div.item__price
+      div.item__sale
+        div.item__oldprice 30 499
+        div.item__percent -20%
+      div.item__newprice 26 785 <span class="rub">a</span>
+    div.item__icons
+      div(data-id="").icon.item__icon.item__icon--wishlist
+        include ../../img/icons/heart.svg
+      div(data-id="").icon.item__icon.item__icon--compare
+        include ../../img/icons/compare.svg
+    div.item__size
+      h4 Размеры
+      div
+        h5.mini-text длина
+        h6.text2 50 см
+      div
+        h5.mini-text ширина
+        h6.text2 50 см
+      div
+        h5.mini-text высота
+        h6.text2 175 см

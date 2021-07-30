@@ -1,0 +1,159 @@
+section.section.personal
+  div.container
+    h1.title1 Личный кабинет
+    div.personal__content
+      nav.personal__nav
+        h2.title2 Здравствуйте, Александр!
+        div
+          a.text1.active#privilege-trigger Карта лояльности
+          a.text1#school-trigger Школа новосёлов
+          a.text1#subscriptions-trigger Подписки
+          a.text1#wishlist-trigger Избранное
+          a.text1#contact-trigger Обратная связь
+          a.text1#profile-trigger Редактировать профиль
+          a(href="/?logout=Y").text1 Выйти
+      div.personal__right
+        div.personal__panel.active
+          div.personal__privilege
+            div.privilege-form__card
+              img(src="img/privilege-card.png")
+              div.privilege-form__card-number
+                span 1234
+                span 5678
+                span 9012
+                span 3456
+              div.privilege-form__card-name Name Surname
+            div.personal__privilege-text
+              span.text2 Предъявляйте вашу карту «Гранд Привилегия» любым удобным способом (в распечатанном виде, на телефоне) при покупке в МТК «Гранд» и ТЦ «Гранд Юг»
+              a(href="/privilege.html").btn Узнать о программе
+            div.personal__privilege-actions
+              a.link#print-card Распечатать карту
+              a.link#email-card Отправить карту по email
+              a.link#sms-card Отправить карту по SMS
+              
+        div.personal__panel
+          div.personal__school
+            h2.title2 ШКОЛА НОВОСЁЛОВ ONLINE
+            p.text1 Школа новосёлов — это мастер-классы от профессиональных строителей и дизайнеров, скидки и специальные предложения, а также полезные советы и видеоуроки.
+            a(href="/school.html").btn Узнать о программе
+            
+        div.personal__panel
+          div.personal__subscriptions
+            form(id="",action="")
+              label
+                input(type="checkbox",name="").hidden
+                div.check
+                span.title2 События
+              label
+                input(type="checkbox",name="").hidden
+                div.check
+                span.title2 Интерьер для маленькой квартиры
+              label
+                input(type="checkbox",name="").hidden
+                div.check
+                span.title2 Акции и специальные предложения
+              label
+                input(type="checkbox",name="").hidden
+                div.check
+                span.title2 Идеи для интерьера
+              label
+                input(type="checkbox",name="").hidden
+                div.check
+                span.title2 Электроника и новинки гаджетов
+              button.btn.btn--gold Сохранить
+              
+        div.personal__panel
+          div.personal__wishlist
+            h2.title2 Сохранить ваши избранные товары
+            p.text1 Хотите сохранить понравившиеся товары? Просто нажмите на значок в виде сердца на товаре, после чего этот товар появится здесь.
+            a(href="/catalog.html").btn Перейти в каталог
+          include catalog-block.pug
+        
+        div.personal__panel
+          div.messages
+            h2.text1 История сообщений
+            div.messages__table.text2
+              div.th
+                div.td Дата и время
+                div.td Тема обращения
+                div.td Магазин
+                div.td Статус
+              div.tr.active
+                div.td 10-09-2020 12:00
+                div.td Вопрос по доставке дивана
+                div.td Pushe
+                div.td Новое
+              div.messages__messenger
+                div.messages__wrapper
+                  div.messages__date 10 сентября
+                  div.messages__message.messages__message--in
+                    div.text2 Добрый день! Чем я могу Вам помочь?
+                      span.messages__time 15:55  
+                  div.messages__message.messages__message--out
+                    div.text2 Здравствуйте! Я бы хотела узнать, действует ли еще акция на диван АРТИ-2 и до какого числа?
+                      span.messages__time 15:55 
+                div.messages__form
+                  form
+                    input(type="text",placeholder="Введите сообщение")
+                    button.btn.btn--gold Отправить
+              div.tr
+                div.td 10-09-2020 18:48
+                div.td Название темы обращения в несколько строк
+                div.td Pushe
+                div.td В работе
+              div.messages__messenger
+                div.messages__wrapper
+                  div.messages__date 10 сентября
+                  div.messages__message.messages__message--in
+                    div.text2 Добрый день! Чем я могу Вам помочь?
+                      span.messages__time 15:55  
+                  div.messages__message.messages__message--out
+                    div.text2 Здравствуйте! Я бы хотела узнать, действует ли еще акция на диван АРТИ-2 и до какого числа?
+                      span.messages__time 15:55 
+                div.messages__form
+                  form
+                    input(type="text",placeholder="Введите сообщение")
+                    button.btn.btn--gold Отправить
+              div.tr
+                div.td 10-09-2020 19:29
+                div.td Вопрос по доставке дивана
+                div.td Pushe
+                div.td Завершено
+              div.messages__messenger
+                div.messages__wrapper
+                  div.messages__date 10 сентября
+                  div.messages__message.messages__message--in
+                    div.text2 Добрый день! Чем я могу Вам помочь?
+                      span.messages__time 15:55  
+                  div.messages__message.messages__message--out
+                    div.text2 Здравствуйте! Я бы хотела узнать, действует ли еще акция на диван АРТИ-2 и до какого числа?
+                      span.messages__time 15:55 
+                div.messages__form
+                  form
+                    input(type="text",placeholder="Введите сообщение")
+                    button.btn.btn--gold Отправить
+        div.personal__panel
+          div.personal__profile
+            form(id="", action="").reg-form
+              label.reg-form__input.text2.filled
+                input(type="text", name="", value="Иван")
+                span Имя
+              label.reg-form__input.text2.filled
+                input(type="text", name="", value="Петров")
+                span Фамилия
+              label.reg-form__input.text2.filled
+                input(type="email", name="", value="ya@yandex.ru")
+                span Email
+              label.reg-form__input.text2.filled
+                input(type="text", name="", value="+7 (555) 555-55-55").phoneinput
+                span Телефон
+              label.reg-form__input.text2
+                input(type="password", name="")
+                span Пароль
+              label.reg-form__input.text2
+                input(type="password", name="")
+                span Повторить пароль
+              button.btn.btn--gold Сохранить
+          
+              
+              

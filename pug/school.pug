@@ -1,0 +1,27 @@
+- var page_title = "Школа новосела"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo.svg"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.all
+    include common/header2.pug
+    main.main
+      section.page-head
+        include mixins/page-top.pug
+        +page-top("/img/demo/novosel-head.jpg","Школа новосела Online","Полезные статьи и специальные предложения")
+      include blocks/school-numbers.pug
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Школа новосела")
+      include blocks/school.pug
+      include blocks/home-shops.pug
+      include blocks/school-reg.pug
+      include blocks/school-program.pug
+      include blocks/home-blog.pug
+      include blocks/news-sales-carousel-4.pug
+      include blocks/privilege-form.pug
+      include blocks/video-review.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

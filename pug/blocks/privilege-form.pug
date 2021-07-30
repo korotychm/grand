@@ -1,0 +1,60 @@
+section.section.privilege-form
+  include marquee.pug
+  div.container
+    h2.title-large Гранд Привилегия
+    div.section-top
+      h2.title1 — Карта лояльности
+      div.section-top__info
+        p.text2 Более 100 спецпредложений для держателей Карты Привилегий каждый месяц! Скидки, подарки, специальные предложения и дополнительные условия при покупках в МТК Гранд и ТЦ Гранд Юг
+    div.privilege-form__block
+      div.privilege-form__left
+        div.privilege-form__card
+          img(src="img/privilege-card.png")
+          div.privilege-form__card-number
+            span 1234
+            span 5678
+            span 9012
+            span 3456
+          div.privilege-form__card-name Name Surname
+      div.privilege-form__right
+        form(id="", action="").reg-form
+          label.reg-form__input.text2
+            input(type="text", name="")
+            span Имя<sup>*</sup>
+          label.reg-form__input.text2
+            input(type="text", name="")
+            span Фамилия
+          label.reg-form__input.text2
+            input(type="email", name="")
+            span Email<sup>*</sup>
+          label.reg-form__input.text2
+            input(type="text", name="").phoneinput
+            span Телефон
+          label.reg-form__input.text2
+            input(type="password", name="")
+            span Пароль<sup>*</sup>
+          button.btn.btn--gold Оформить карту
+          label.reg-form__agree Я согласен на обработку моих персональных данных на условиях, определенных <a href="">Политикой конфиденциальности</a>
+            input(type="checkbox",name="",value="").hidden
+            div.check
+          label.reg-form__agree Я соглашаюсь с <a href="">Правилами Программы</a>. Я хочу получать рекламную информацию о продуктах и промоакциях компании. Я в любой момент могу отписаться от рассылки.
+            input(type="checkbox",name="",value="").hidden
+            div.check
+    div.privilege-form__auth
+      div
+        h3 Уже есть карта привилегий?
+        a.text1 Войдите на сайт с помощью e-mail и пароля
+      form(id="", action="").reg-form
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span
+            i Email<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="password", name="")
+          span
+            i Пароль<sup>*</sup>
+        button.btn.btn--gold Войти
+          
+          
+          
+            

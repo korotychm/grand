@@ -1,0 +1,198 @@
+include ../mixins/breadcrumbs.pug
+mixin review()
+  div.item-detail__review
+    div.item-detail__review-name
+      h3 Светлана С.
+      div.item-detail__rating
+        div.star.active
+          include ../../img/icons/star.svg
+        div.star.active
+          include ../../img/icons/star.svg
+        div.star.active
+          include ../../img/icons/star.svg
+        div.star.active
+          include ../../img/icons/star.svg
+        div.star
+          include ../../img/icons/star.svg
+    div.item-detail__review-date.text2 22.03.2020
+    div.item-detail__review-content.text2
+      h4 Комментарий
+      p Диван Арти-2 купили с женой в спальню старшему сыну. Подкупил красивый синий оттенок и достаточная длина – сын у нас высокий. Легко раскладывается даже младшим ребенком, не скрипит, удобен для сна и игр, в сложенном состоянии не занимает много места в комнате. Есть вместительный ящик для подушек и одеял. Надеюсь, что прослужит долго.
+    div.item-detail__review-images
+      a(href="/img/demo/review-img.svg").fancybox
+        img(src="/img/demo/review-img.svg")
+      a(href="/img/demo/review-img.svg").fancybox
+        img(src="/img/demo/review-img.svg")
+  
+section.item-detail
+  div.container
+    div.item-detail__left
+      +breadcrumbs("Главная","Каталог товаров","Диваны и кресла","Угловые диваны")
+      div.item-detail__photos
+        div.large
+          img(src="/img/demo/item-detail1.jpg")
+        div.controls
+          div
+            img(src="/img/demo/item-detail1.jpg")
+          div
+            img(src="/img/demo/item-detail3.jpg")
+          div
+            img(src="/img/demo/item-detail4.jpg")
+          div
+            img(src="/img/demo/item-detail5.jpg")
+    div.item-detail__right
+      div.item-detail__scroll
+        a(href="/shop.html").item__brand Pushe
+        h1.title1 Диван-кровать Арти 2
+        div.item-detail__icons
+          div.item-detail__rating
+            div.star.active
+              include ../../img/icons/star.svg
+            div.star.active
+              include ../../img/icons/star.svg
+            div.star.active
+              include ../../img/icons/star.svg
+            div.star.active
+              include ../../img/icons/star.svg
+            div.star
+              include ../../img/icons/star.svg
+          div(data-id="").icon.item__icon.item__icon--wishlist
+            include ../../img/icons/heart.svg
+          div(data-id="").icon.item__icon.item__icon--compare
+            include ../../img/icons/compare.svg
+        div.item-detail__price
+          div.item__price
+            div.item__sale
+              div.item__oldprice 30 499
+              div.item__percent -20%
+            div.item__newprice 26 785 <span class="rub">a</span>
+            div.item-detail__economy Экономия 3 714 <span class="rub">a</span>
+          div.item-detail__privilege-sign
+            img(src="/img/icons/privilege-sign.png")
+          button.btn.btn--gold.btn--order.btn--message Заказать товар
+        div.item-detail__contact
+          a(href="")
+            div.icon
+              include ../../img/icons/scheme.svg
+            span.link Найти на схеме
+          a(href="tel:74955422623")
+            div.icon
+              include ../../img/icons/phone.svg
+            span +7 (495) 542 26 23
+        div.item-detail__accordion
+          input(type="checkbox",name="accordion")#accordion1
+          label(for="accordion1") Описание
+          div.item-detail__panel.
+            Ткань: Vital Apple<br>
+            Комплектация: диван-кровать + подушки спинки<br>
+            Диван в стиле «минимализм», а значит, станет украшением просторного лофта, небольшой спальни или кухни. Наполнение дивана – блок независимых пружин и высокоэластичный ППУ - обеспечивает равномерное распределение нагрузки, поэтому диван прослужит долго и сохранит свою форму. Надежный механизм «Еврософа» обеспечивает легкую трансформацию дивана в кровать, что экономит время и усилия. Ход трансформации плавный, поэтому с диваном справится и ребёнок, и пожилой человек.
+          input(type="checkbox",name="accordion")#accordion2
+          label(for="accordion2") Размеры
+          div.item-detail__panel
+            table
+              tr
+                td Длина
+                td 201 см
+              tr
+                td Ширина
+                td 95 см
+              tr
+                td Высота
+                td 90 см
+              tr
+                td Спальное место
+                td 200 x 140 см
+          input(type="checkbox",name="accordion")#accordion3
+          label(for="accordion3") Подробнее о товаре
+          div.item-detail__panel
+            table.fullwidth
+              tr
+                td Материал каркаса
+                td Массив
+              tr
+                td Наполнитель
+                td Независимый пружинный блок
+              tr
+                td Механизм трансформации
+                td Еврокнижка
+              tr
+                td Ящик для белья
+                td Да
+              tr
+                td Со спальным местом
+                td Да
+              tr
+                td Раскладной
+                td Да
+          input(type="checkbox",name="accordion")#accordion4
+          label(for="accordion4") Другие цвета
+          div.item-detail__panel
+            div.item-detail__colors
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color1.jpg")
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color2.jpg")
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color3.jpg")
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color4.jpg")
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color5.jpg")
+              a(href="/item-detail.html")
+                img(src="img/demo/item-detail-color6.jpg")
+          input(type="checkbox",name="accordion")#accordion5
+          label(for="accordion5") Гранд Привилегия
+          div.item-detail__panel
+            div.text1 Специальная скидка 15%<sup>*</sup>
+            span.text3 <sup>*</sup>Подробности акции уточняйте у продавцов-консультантов
+          input(type="checkbox",name="accordion")#accordion6
+          label(for="accordion6") Отзывы о товаре <span>(10)</span>
+          div.item-detail__panel
+            div.item-detail__reviews
+              +review()
+              +review()
+              +review()
+              +review()
+            div.item-detail__reviews-trigger.text2
+            form(id="",action="")
+              div.item-detail__reviews-form
+                h3.text2 Оценить товар
+                div.item-detail__reviews-stars
+                  div.icon
+                    include ../../img/icons/star.svg
+                  div.icon
+                    include ../../img/icons/star.svg
+                  div.icon
+                    include ../../img/icons/star.svg
+                  div.icon
+                    include ../../img/icons/star.svg
+                  div.icon
+                    include ../../img/icons/star.svg
+                  input(type="number",value="1",min="1",max="5",name="").hidden
+                h3.text2 Написать отзыв
+                textarea
+                button.btn.btn--gold Отправить
+                
+div.popup.popup--message
+  div.popup__inner
+    div.popup__close
+    div.message-form
+      form(id="",action="").reg-form
+        label.reg-form__input.text2
+          input(type="text", name="")
+          span Имя<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="email", name="")
+          span Email<sup>*</sup>
+        label.reg-form__input.text2
+          input(type="text", name="").phoneinput
+          span Телефон
+        label.reg-form__input.text2
+          textarea(name="",placeholder="Сообщение")
+        button.btn.btn--gold Отправить
+                
+
+                
+      
+                
+          

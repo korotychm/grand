@@ -1,0 +1,20 @@
+- var page_title = "Блог"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo.svg"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.all
+    include common/header2.pug
+    main.main
+      section.page-head
+        include mixins/page-top.pug
+        +page-top("/img/demo/blog-head.jpg","Блог","Подзаголовок акции в одну или две строки, соблюдайте кол-во знаков")
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Блог")
+      include blocks/blog.pug
+      include blocks/advertisement.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

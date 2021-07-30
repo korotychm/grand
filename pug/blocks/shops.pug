@@ -1,0 +1,133 @@
+mixin shop(name,img)
+  a(href="/shop-detail.html").shops__item
+    div.shops__img
+      img(src=img)
+    div.shops__text
+      h3= name
+      h4 Гранд / Гранд Юг
+      
+section.section.shops
+  div.container
+    div.shops__top
+      div
+        h2.title2 Все категории
+      div
+        form(id="",action="").catalog__search
+          input(type="text",placeholder="Поиск магазина")
+          button
+            include ../../img/icons/search.svg
+            
+    div.tags.tags--mobile-select.toggle-active
+      a.active.text2 Все категории
+      a.text2 Диваны и кресла
+      a.text2 Кровати и матрасы
+      a.text2 Столы и стулья
+      a.text2 Кухонная мебель
+      a.text2 Шкафы и стеллажи
+      a.text2 Комоды и тумбы
+      a.text2 Офисная мебель
+      a.text2 Детская мебель
+      a.text2 Декор, свет и ковры
+      a.text2 Мебель для ванной
+      a.text2 Бытовая техника
+      a.text2 Электроника
+      a.text2 Компьютерная техника
+      
+    div.shops__controls
+      div.alphabet
+        div
+          a(href="#letter-1").anchor 0-9
+          a(href="#letter-2").anchor A
+          a(href="#letter-3").anchor B
+          a(href="#letter-1").anchor C
+          a(href="#letter-2").anchor D
+          a(href="#letter-3").anchor E
+          a(href="#letter-1").anchor F
+          a(href="#letter-2").anchor G
+          a(href="#letter-3").anchor H
+          a(href="#letter-1").anchor I
+          a(href="#letter-2").anchor G
+          a(href="#letter-3").anchor K
+          a(href="#letter-1").anchor L
+          a(href="#letter-2").anchor M
+          a(href="#letter-3").anchor N
+          a(href="#letter-1").anchor O
+          a(href="#letter-2").anchor P
+          a(href="#letter-3").anchor Q
+          a(href="#letter-1").anchor R
+          a(href="#letter-2").anchor S
+          a(href="#letter-3").anchor T
+          a(href="#letter-1").anchor U
+          a(href="#letter-2").anchor V
+          a(href="#letter-3").anchor W
+          a(href="#letter-1").anchor X
+          a(href="#letter-2").anchor Y
+          a(href="#letter-3").anchor Z
+        div
+          a(href="#letter-1").anchor А
+          a(href="#letter-2").anchor Б
+          a(href="#letter-3").anchor В
+          a(href="#letter-1").anchor Г
+          a(href="#letter-2").anchor Д
+          a(href="#letter-3").anchor Е
+          a(href="#letter-1").anchor Ж
+          a(href="#letter-2").anchor З
+          a(href="#letter-3").anchor И
+          a(href="#letter-1").anchor К
+          a(href="#letter-2").anchor Л
+          a(href="#letter-3").anchor М
+          a(href="#letter-1").anchor Н
+          a(href="#letter-2").anchor О
+          a(href="#letter-3").anchor П
+          a(href="#letter-1").anchor Р
+          a(href="#letter-2").anchor С
+          a(href="#letter-3").anchor Т
+          a(href="#letter-1").anchor У
+          a(href="#letter-2").anchor Ф
+          a(href="#letter-3").anchor Х
+          a(href="#letter-1").anchor Ц
+          a(href="#letter-2").anchor Ч
+          a(href="#letter-3").anchor Ш
+          a(href="#letter-1").anchor Щ
+          a(href="#letter-2").anchor Э
+          a(href="#letter-3").anchor Ю
+          a(href="#letter-1").anchor Я
+          
+      div.catalog__grid-switcher
+        a.active
+          include ../../img/icons/catalog-grid-list.svg
+        a
+          include ../../img/icons/catalog-grid-2.svg
+        
+    div.shops__list.shops__list--list#letter-1
+      h2 А
+      div.shops__grid
+        +shop("Абитарэ Иентерьер","/img/demo/shop1.png")
+        a(href="/shop-detail.html").shops__item
+          div.shops__img
+            img(src="/img/demo/shop2.png")
+          div.shops__text
+            h3 Аллегро Классика
+            h4 Гранд / Гранд Юг
+            span Новое
+        a(href="/shop-detail.html").shops__item
+          div.shops__img
+            img(src="/img/demo/shop3.png")
+          div.shops__text
+            h3 Антик Европа
+            h4 Гранд / Гранд Юг
+            span Скоро
+        +shop("Артис","/img/demo/shop4.png")
+        +shop("Ангстрем","/img/demo/shop5.png")
+        +shop("Артеко","/img/demo/shop6.png")
+        +shop("Анонс","/img/demo/shop7.png")
+    div.shops__list.shops__list--list#letter-2
+      h2 Б
+      div.shops__grid
+        +shop("Бастион-С","/img/demo/shop8.png")
+        +shop("Бентли Трейд","/img/demo/shop9.png")
+        +shop("Берлиоз","/img/demo/shop10.png")
+        +shop("Брянский лес","/img/demo/shop11.png")
+        
+        
+    

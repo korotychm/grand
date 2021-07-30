@@ -1,0 +1,20 @@
+include ../mixins/catalog-item.pug
+
+.section.elrai-carousel
+  .container
+    h2.title-large Теперь не только мебель
+    div.section-top
+      h2.title1 — Электронный Рай
+      div.section-top__info
+        p.text2
+          | Более 150 магазинов электроники, бытовой и компьютерной техники вы найдете по адресу:
+          br
+          br
+          | м.Пражская, ул. Кировоградская, д.15
+        a(href="/catalog.html").link Смотреть каталог
+    div.elrai-carousel__carousel
+      div.slick
+        +catalog-item("Премьер Техно","MIDEA VCS43C4","/img/demo/item9.jpg")
+        +catalog-item("Премьер Техно","Kitfort KT-659-1 белый","/img/demo/item10.jpg")
+        +catalog-item("Премьер Техно","Kitfort KT-659-1 белый","/img/demo/item10.jpg")
+        +catalog-item("Премьер Техно","MIDEA VCS43C4","/img/demo/item9.jpg")

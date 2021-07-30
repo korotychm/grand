@@ -1,0 +1,16 @@
+include ../mixins/blog-item.pug
+         
+section.section.home-blog
+  div.container
+    div.section-top
+      h2.title1 Блог
+      div.section-top__info
+        p.text2 В разделе нашего блога вы можете найти большую подборку полезных советов по ремонту, дизайну интерьера и планировке помещений.
+        a(href="/blog.html").link Смотреть все публикации
+    div.home-blog__grid
+      +blog-item("","Кухня","Оформляем стык фартука и столешницы на кухне","/img/demo/home-blog1.jpg")
+      +blog-item("","Дизайн","Как оформить интерьер без дизайнера, 9 примеров","/img/demo/home-blog2.jpg")
+      +blog-item("","Планировка","Из двушки в трешку: перепланировка квартиры для семьи","/img/demo/home-blog3.jpg")
+      +blog-item("","Спальня","Как обустроить спальню в сталинке: 7 идей","/img/demo/home-blog4.jpg")
+    
+    

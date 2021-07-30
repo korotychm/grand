@@ -1,0 +1,10 @@
+section.section.section--nopb.home-shops
+  div.container
+    div.home-shops__heading
+      h2.title1 Магазины
+      a(href="/shops.html").btn.btn--default Все магазины
+    div.home-shops__links
+      div
+        - var shops = ["8 Марта","A-stile","Academy","Dятьково","Estetica","Lazurit","Loft","Miassmobili","Moon","Neapoliscasa","Pushe","Scavolini","Veronamobili","Ангстрем","Ладья","Белфан","Creda"]
+        for shop in shops
+          a.title1(href="/shop-detail.html")= shop

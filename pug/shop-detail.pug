@@ -1,0 +1,30 @@
+- var page_title = "Магазин детально"
+- var page_description = ""
+- var page_keywords = ""
+- var logo = "/img/logo-yug--black.png"
+
+<!DOCTYPE HTML>
+html(lang="ru")
+  include common/head.pug
+  body.yug
+    include common/header2.pug
+    main.main
+      section.page-head
+        include mixins/page-top.pug
+        +page-top("/img/demo/shop-head.jpg","FAБRIK","Подзаголовок акции в одну или две строки, соблюдайте кол-во знаков")
+      include mixins/breadcrumbs.pug
+      +breadcrumbs("Главная","Магазины","FAБRIK")
+      include blocks/shop-detail.pug
+      include blocks/news-sales-carousel.pug
+      include blocks/home-interior.pug
+      section.section
+        div.container
+          h2.title1 Товары магазина
+          div.tags
+            a(href="").active.text2 Все категории
+            a(href="").text2 Диваны и кресла
+            a(href="").text2 Кровати и матрасы
+            a(href="").text2 Шкафы и стеллажи
+          include blocks/catalog-block.pug
+    include common/footer.pug
+    include common/footer_scripts.pug

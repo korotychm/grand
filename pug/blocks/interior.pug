@@ -1,0 +1,49 @@
+include ../mixins/catalog-item.pug
+include ../mixins/interior-item.pug
+         
+section.section.interior
+  .container  
+    div.interior__filter
+      div.filter__select
+        span.text3 Тип комнаты
+        div.filter__select-dropdown
+          a(href="") Кухня
+          a(href="").active Столовая
+          a(href="") Спальня
+          a(href="") Гостиная
+          a(href="") Коридор
+          a(href="") Санузел
+      div.filter__select
+        span.text3 Стиль интерьера
+        div.filter__select-dropdown
+          label.text3.filter__check
+            input(type="checkbox")
+            span Классический
+          label.text3.filter__check
+            input(type="checkbox")
+            span Современный
+          label.text3.filter__check
+            input(type="checkbox")
+            span Прованс
+          label.text3.filter__check
+            input(type="checkbox")
+            span Минимализм
+          label.text3.filter__check
+            input(type="checkbox")
+            span Восточный
+    div.filter__selected
+      div
+        h4.text3 Стиль интерьера:
+        a.text3 Современный
+          span.clear
+        a.text3 Минимализм
+          span.clear
+      a.filter__clear.link Сбросить все
+    h2.title1 Столовая
+    
+    +interior-item()
+    p Небольшое описание картинки на одну или две строчки
+    +interior-item()
+    p Небольшое описание картинки на одну или две строчки
+    +interior-item()
+    p Небольшое описание картинки на одну или две строчки

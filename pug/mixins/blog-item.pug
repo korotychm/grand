@@ -1,0 +1,7 @@
+mixin blog-item(category,heading,text,img)
+  a(href="/blog-detail.html").blog__item
+    div(style="background-image: url("+img+")").blog__img
+    span.blog__category= category
+    div.blog__text
+      h3.title2= heading
+      p.text2= text

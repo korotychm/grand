@@ -1,0 +1,31 @@
+mixin service-item(title,img)
+  div(data-img=img).home-services__accordion-item
+    h3.text1= title
+    div.text2
+      p В МТК «ГРАНД» Вы можете воспользоваться услугами профессиональных дизайнеров по интерьеру с многолетним опытом работы.
+      p Основная задача помощь покупателям в — выборе мебели и предметов интерьера именно из нашего ассортимента, поэтому у нас расценки на услуги в несколько раз ниже, чем в среднем по Москве.
+  
+section.section.section--nopb.home-services
+  div.container
+    div.home-services__heading
+      h2.title2 Услуги
+    div.home-services__right
+      div.home-services__accordion
+        div(data-img="/img/demo/service1.jpg").home-services__accordion-item.active
+          h3.text1 Дизайн студия
+          div.text2
+            p В МТК «ГРАНД» Вы можете воспользоваться услугами профессиональных дизайнеров по интерьеру с многолетним опытом работы.
+            p Основная задача помощь покупателям в — выборе мебели и предметов интерьера именно из нашего ассортимента, поэтому у нас расценки на услуги в несколько раз ниже, чем в среднем по Москве.
+        +service-item("Доставка мебели","/img/demo/service2.jpg")
+        +service-item("Мебель в кредит","/img/demo/service1.jpg")
+        +service-item("Ремонт и реставрация","/img/demo/service2.jpg")
+        +service-item("Рестораны и кафе","/img/demo/service1.jpg")
+        +service-item("Сборка мебели","/img/demo/service2.jpg")
+        +service-item("Служба информации","/img/demo/service1.jpg")
+        +service-item("Детский игровой клуб","/img/demo/service2.jpg")
+        +service-item("Удобная парковка","/img/demo/service1.jpg")
+      div.home-services__img
+        img(src="/img/demo/service1.jpg")
+      
+  
+  

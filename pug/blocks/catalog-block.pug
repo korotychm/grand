@@ -1,0 +1,145 @@
+include ../mixins/catalog-item.pug
+mixin filter-select(name)
+  div.filter__select
+    span.text3= name
+    div.filter__select-dropdown
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 1 (123)
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 2 (1234) 
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 3 (12)
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 4 (1)
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 5 (134)
+      label.text3.filter__check
+        input(type="checkbox")
+        span Значение 6 (1346)
+        
+div.filter
+  div.filter__close.hidden-desktop
+  div.filter__triggers
+    a.text2.active Параметры
+    a.text2 Размер
+    a.text2 Цена
+  div.filter__panel.active
+    +filter-select("Бренд")
+    +filter-select("Цвет")
+    +filter-select("Страна производитель")
+    +filter-select("Форма")
+    +filter-select("Стиль")
+    +filter-select("Узор")
+    +filter-select("Материал")
+    +filter-select("Способ производства")
+  div.filter__panel
+    div.filter__range
+      span.text3 Ширина, см
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="50",min="50").filter__range-from
+        div
+          input(type="number",name="",value="210",max="210").filter__range-to
+      div.filter__range-slider
+    div.filter__range
+      span.text3 Высота, см
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="10",min="10").filter__range-from
+        div
+          input(type="number",name="",value="150",max="150").filter__range-to
+      div.filter__range-slider
+    div.filter__range
+      span.text3 Длина, см
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="50",min="50").filter__range-from
+        div
+          input(type="number",name="",value="250",max="250").filter__range-to
+      div.filter__range-slider
+    div.filter__range
+      span.text3 Глубина, см
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="0",min="0").filter__range-from
+        div
+          input(type="number",name="",value="220",max="220").filter__range-to
+      div.filter__range-slider
+  div.filter__panel
+    div.filter__range
+      span.text3 Цена, руб.
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="560",min="560").filter__range-from
+        div
+          input(type="number",name="",value="549990",max="549990").filter__range-to
+      div.filter__range-slider
+    div.filter__range
+      span.text3 Скидка, %
+      div.filter__range-inputs
+        div
+          input(type="number",name="",value="0",min="0").filter__range-from
+        div
+          input(type="number",name="",value="100",max="100").filter__range-to
+      div.filter__range-slider
+  button.btn.btn--gold.hidden-desktop Подобрать
+  div.filter__selected
+    div
+      h4.text3 Бренд
+      a.text3 Pushe
+        span.clear
+    div
+      h4.text3 Форма
+      a.text3 Прямоугольный
+        span.clear
+      a.text3 Квадратный
+        span.clear
+    a.filter__clear.link Сбросить все
+    
+div.catalog__wrapper
+  div.catalog__controls
+    div.catalog__sort.toggle-active
+      span.text2 Сортировка
+      div.catalog__sort-dropdown
+        a(href="").active По умолчанию
+        a(href="") По цене
+        a(href="") По названию
+        a(href="") По популярности
+    div.catalog__grid-switcher
+      div.catalog__filter-trigger.hidden-desktop
+        include ../../img/icons/filter-trigger.svg
+      a.active
+        include ../../img/icons/catalog-grid-3.svg
+      a
+        include ../../img/icons/catalog-grid-2.svg
+  div.catalog__grid
+    +catalog-item("Neopoliscasa","Торшер Casa dei sogni","/img/demo/item1.jpg")
+    +catalog-item("Pushe","Диван-кровать арти 2","/img/demo/item2.jpg")
+    +catalog-item("Pushe","Кресло «Лайоль»","/img/demo/item3.jpg")
+    +catalog-item("ИнтерДизайн","комод лара-2","/img/demo/item4.jpg")
+    +catalog-item("Pushe","прикроватная тумба «верона max»","/img/demo/item5.jpg")
+    +catalog-item("Pushe","Кровать «Капри» Diamond","/img/demo/item6.jpg")
+    +catalog-item("Pushe","ДИВАН ОСТИН","/img/demo/item7.jpg")
+    +catalog-item("Ладья","ДИВАН ХИЛТОН Y31","/img/demo/item8.jpg")
+    +catalog-item("Neopoliscasa","Торшер Casa dei sogni","/img/demo/item1.jpg")
+    +catalog-item("Pushe","Диван-кровать арти 2","/img/demo/item2.jpg")
+    +catalog-item("Pushe","Кресло «Лайоль»","/img/demo/item3.jpg")
+    +catalog-item("ИнтерДизайн","комод лара-2","/img/demo/item4.jpg")
+  div.catalog__bottom
+    div.catalog__more-btn
+      button.btn Показать еще
+    div.catalog__pagination
+      a(href="").slick-arrow.slick-prev.disabled
+      div.slick-counter 
+        span 1
+        a(href="#") 2
+        a(href="#") 3
+        a(href="#") 4
+        a ...
+        a(href="#") 20
+      a(href="").slick-arrow.slick-next

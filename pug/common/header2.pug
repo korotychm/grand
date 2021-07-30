@@ -1,0 +1,61 @@
+header.header.header--2
+  div.header__left
+    button.header__burger
+      div
+      div
+      div
+    aside.aside
+      include aside.pug
+  div.container
+    nav.tc-switch
+      a.link.tc-switch__link.tc-switch__link--dropdown.toggle-active Все ТЦ
+      div.tc-switch__dropdown
+        a.link(href="/grand.html") Гранд
+        a.link(href="/grand-yug.html") Гранд Юг
+        a.link(href="/el-rai.html") Электронный Рай
+    div.header__contact
+      a(href="/contact.html").header__location
+        div.icon
+          include ../../img/icons/location.svg
+        span Адреса
+      a(href="/contact.html").header__time
+        div.icon
+          include ../../img/icons/clock.svg
+        span 10:00 - 22:00
+      a(href="tel:74952522525").header__phone
+        div.icon
+          include ../../img/icons/phone.svg
+        span +7 495 252-25-25
+      a(href="").header__scheme
+        div.icon
+          include ../../img/icons/scheme.svg
+        span Схема центра
+          
+  div.header__right
+    div.header__search
+      div.header__search-close
+      form(action="/search.html")
+        input(type="text",name="search")
+        button.icon
+          include ../../img/icons/search.svg
+    a(href="compare.html")
+      div.icon
+        include ../../img/icons/compare.svg
+    a(href="personal.html")
+      div.icon
+        include ../../img/icons/personal.svg
+          
+header.header__bottom
+  div.container
+    a(href="/").header__logo
+      img(src= logo)
+    nav.header__nav
+      a(href="news-sales.html").text2.active Новости и акции
+      a(href="shops.html").text2 Магазины
+      a(href="interior.html").text2 Интерьерные решения
+      a(href="about.html").text2 О нас
+      a(href="school.html").text2 Школа новосёла
+      a(href="privilege.html").text2 Гранд Привилегия
+      a(href="blog.html").text2 Блог
+      a(href="contact.html").text2 Контакты
+    

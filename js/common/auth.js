@@ -1,0 +1,12 @@
+$('.login-trigger').click(function(){
+  $('.popup--login').fadeIn();
+});
+$('.popup__close').click(function(){
+  $('.popup').fadeOut();
+  $('.auth-form').removeClass('active');
+  $('.auth-form--auth').addClass('active');
+});
+$('.auth-switch').click(function(){
+  $('.auth-form').removeClass('active');
+  $($(this).data('form')).addClass('active');
+});
